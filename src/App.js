@@ -9,6 +9,7 @@ import Modal from './components/Modal/modal';
 function App() {
   return (
     <div className="App">
+      <div id="overlay"></div>
       <TopBar/>
         <Modal/>
       <Footer/>
