@@ -4,12 +4,13 @@ import './App.css';
 
 import TopBar from './components/TopBar/top_bar';
 import Footer from './components/Footer/footer';
+import Modal from './components/Modal/modal';
 
 function App() {
   return (
     <div className="App">
       <TopBar/>
-        <div className="content"></div>
+        <Modal/>
       <Footer/>
     </div>
   );
