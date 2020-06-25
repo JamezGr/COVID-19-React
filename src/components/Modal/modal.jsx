@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Country from './Countries/country_holder';
+
 import UkFlag from '../../icons/gb.svg';
 
 class Modal extends React.Component{
@@ -21,87 +23,14 @@ class Modal extends React.Component{
                     <div className="separator"></div>
                     <div className="modal--list__title">EUROPE</div>
                     <div className="modal--list__container">
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-
-                        <div className="country--placeholder">
-                            <img className="country--icon" src={UkFlag} style={{width: "60px"}}/>
-                            <div className="country--text__placeholder">
-                                <div className="country--text__name">United Kingdom</div>
-                                <div className="country--text__lang">English</div>
-                            </div>
-                        </div>
-                        
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
+                        <Country name="United Kingdom" language="English"/>
                     </div>
                     
                 </div>
