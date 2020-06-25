@@ -115,6 +115,10 @@ body {
   margin: auto;
 }
 
+.modal--list__container {
+  padding: 5px;
+}
+
 .modal--list__title { 
   margin-left: 0px;
   font-size: 18px;
@@ -156,4 +160,15 @@ body {
 
 .fab {
   margin: 5px !important;
+}
+
+.country--placeholder {
+  display: inline-block;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.country--text__placeholder {
+  display: inline-block;
+  padding-left: 10px;
 }
