@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Country from './Countries/country_holder';
+import CountriesList from '../../content/countries.json';
 
 import UkFlag from '../../icons/gb.svg';
 
