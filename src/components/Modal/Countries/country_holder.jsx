@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import UkFlag from '../../../icons/gb.svg';
+import flags from '../../../content/country_flags';
 
 class Country extends React.Component {
 

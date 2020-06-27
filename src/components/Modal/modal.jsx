@@ -6,6 +6,19 @@ import CountriesList from '../../content/countries.json';
 import UkFlag from '../../icons/gb.svg';
 
 class Modal extends React.Component{
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            title: "",
+            content: ""
+        }
+    }
+
+    setActive() {}
+
+    setInactive() {}
+
     render() {
         return (
             <div id="modal--window">
