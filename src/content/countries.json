@@ -197,6 +197,198 @@
         "code": "VA",
         "language": "Italiano"
         }
-    ]
+    ],
+    "NORTH AMERICA": [
+        {
+            "name": "Anguilla",
+            "code": "AI",
+            "language": "English"
+        },
+        {
+            "name": "Antigua and Barbuda",
+            "code": "AG",
+            "language": "English"
+        },
+        {
+            "name": "Bahamas",
+            "code": "BS",
+            "language": "English"
+        },
+        {
+            "name": "Barbados",
+            "code": "BB",
+            "language": "English"
+        },
+        {
+            "name": "Belize",
+            "code": "BZ",
+            "language": "English"
+        },
+        {
+            "name": "Bermuda",
+            "code": "BM",
+            "language": "English"
+        },
+        {
+            "name": "British Virgin Islands",
+            "code": "VG",
+            "language": "English"
+        },
+        {
+            "name": "Canada",
+            "code": "CA",
+            "language": "English"
+        },
+        {
+            "name": "Caribbean Netherlands",
+            "code": "BQ",
+            "language": "Nederlands"
+        },
+        {
+            "name": "Cayman Islands",
+            "code": "KY",
+            "language": "English"
+        },
+        {
+            "name": "Costa Rica",
+            "code": "CR",
+            "language": "English"
+        },
+        {
+            "name": "Cuba",
+            "code": "CU",
+            "language": "Español"
+        },
+        {
+            "name": "Dominica",
+            "code": "DM",
+            "language": "English"
+        },
+        {
+            "name": "Dominican Republic",
+            "code": "DO",
+            "language": "Español"
+        },
+        {
+            "name": "El Salvador",
+            "code": "SV",
+            "language": "Español"
+        },
+        {
+            "name": "Greenland",
+            "code": "GL",
+            "language": "Greenlandic"
+        },
+        {
+            "name": "Grenada",
+            "code": "GD",
+            "language": "English"
+        },
+        {
+            "name": "Guadeloupe",
+            "code": "GP",
+            "language": "Français"
+        },
+        {
+            "name": "Guatemala",
+            "code": "GT",
+            "language": "Español"
+        },
+        {
+            "name": "Haiti",
+            "code": "HT",
+            "language": "Ayisyen"
+        },
+        {
+            "name": "Honduras",
+            "code": "HN",
+            "language": "Español"
+        },
+        {
+            "name": "Jamaica",
+            "code": "JM",
+            "language": "English"
+        },
+        {
+            "name": "Martinique",
+            "code": "MQ",
+            "language": "Français"
+        },
+        {
+            "name": "Mexico",
+            "code": "MX",
+            "language": "Español"
+        },
+        {
+            "name": "Montserrat",
+            "code": "MS",
+            "language": "English"
+        },
+        {
+            "name": "Nicaragua",
+            "code": "NI",
+            "language": "Español"
+        },
+        {
+            "name": "Panama",
+            "code": "PA",
+            "language": "Español"
+        },
+        {
+            "name": "Puerto Rico",
+            "code": "PR",
+            "language": "Español"
+        },
+        {
+            "name": "Saint Barthélemy",
+            "code": "BL",
+            "language": "English"
+        },
+        {
+            "name": "Saint Lucia",
+            "code": "LC",
+            "language": "English"
+        },
+        {
+            "name": "Saint Martin",
+            "code": "MF",
+            "language": "Français"
+        },
+        {
+            "name": "Saint Pierre and Miquelon",
+            "code": "PM",
+            "language": "Français"
+        },
+        {
+            "name": "St. Vincent and Grenadines",
+            "code": "VC",
+            "language": "English"
+        },
+        {
+            "name": "Siint Maarten",
+            "code": "SX",
+            "language": "Nederlands/English"
+        },
+        {
+            "name": "Trinidad and Tobago",
+            "code": "TT",
+            "language": "English"
+        },
+        {
+            "name": "Turks and Caicos Islands",
+            "code": "TC",
+            "language": "English"
+        },
+        {
+            "name": "United States",
+            "code": "US",
+            "language": "English"
+        },
+        {
+            "name": "United States Virgin Islands",
+            "code": "VI",
+            "language": "English"
+        }
+    ] 
     
 }
