@@ -11,23 +11,27 @@ class ModalList extends React.Component {
             listTitle: "",
             listType: "",
             listContent: [],
-            listData: {}
+            listData: []
         }
     }
 
     componentDidMount() {
-        console.log(this.props.data);
+        if (typeof CountriesList[this.props.title] !== "undefined") {
+            this.setState({listContent: CountriesList[this.props.title]});
+        } 
     }
     
     render() {
-        const {title, data} = this.props;
-
+        const {title, data, type} = this.props;
+        
         return (
             <div className="modal--list">
                 <div className="separator"></div>
                 <div className="modal--list__title">{title}</div>
                 <div className="modal--list__container">
-                    <Country name="United Kingdom" language="English"/>
+                    {this.state.listContent.map((item, i) => <Country name={item.name} 
+                                                                        language={item.language}
+                                                                        type={item.code}/>)}
                 </div>
             </div>
         )

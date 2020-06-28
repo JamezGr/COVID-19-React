@@ -18,7 +18,6 @@ class Modal extends React.Component{
     }
 
     componentDidMount() {
-        console.log(CountriesList.Europe);
     }
 
     setActive() {}
@@ -30,27 +29,12 @@ class Modal extends React.Component{
             <div id="modal--window">
                 <div id="modal--window__title">Select Your Country</div>
                 <div id="modal--window__area">
-                    <ModalList title="ASIA & PACIFIC"/> 
-                    <ModalList title="CIS"/> 
-
-                    <div className="modal--list">
-                        <div className="separator"></div>
-                        <div className="modal--list__title">EUROPE</div>
-                        <div className="modal--list__container">
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                            <Country name="United Kingdom" language="English"/>
-                        </div>
-                    </div>
-
-                    <ModalList title="MIDDLE EAST & AFRICA"/> 
-                    <ModalList title="NORTH AMERICA"/> 
-                    <ModalList title="SOUTH AMERICA"/> 
+                    <ModalList title="ASIA & PACIFIC" type="COUNTRIES"/> 
+                    <ModalList title="CIS" type="COUNTRIES"/> 
+                    <ModalList title="EUROPE" type="COUNTRIES"/> 
+                    <ModalList title="MIDDLE EAST & AFRICA" type="COUNTRIES"/> 
+                    <ModalList title="NORTH AMERICA" type="COUNTRIES"/> 
+                    <ModalList title="SOUTH AMERICA" type="COUNTRIES"/> 
                 </div>
             </div>
         )

@@ -1,5 +1,5 @@
 {   
-    "Europe": [
+    "EUROPE": [
         {
         "name": "Andorra",
         "code": "AD",
@@ -137,7 +137,7 @@
         "code": "MD",
         "language": "Română"
         }, {
-        "name": "Macedonia, The Former Yugoslav Republic of",
+        "name": "Macedonia",
         "code": "MK",
         "language": "македонски"
         }, {
@@ -193,7 +193,7 @@
         "code": "UA",
         "language": "українська"
         }, {
-        "name": "Holy See (Vatican City State)",
+        "name": "Holy See",
         "code": "VA",
         "language": "Italiano"
         }

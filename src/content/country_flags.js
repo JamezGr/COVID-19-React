@@ -3,6 +3,7 @@ import AE from "../icons/ae.svg";
 import AF from "../icons/af.svg";
 import AG from "../icons/ag.svg";
 import AI from "../icons/ai.svg";
+import AL from "../icons/al.svg";
 import AM from "../icons/am.svg";
 import AN from "../icons/an.svg";
 import AO from "../icons/ao.svg";
@@ -90,6 +91,7 @@ import GM from "../icons/gm.svg";
 import GN from "../icons/gn.svg";
 import GP from "../icons/gp.svg";
 import GQ from "../icons/gq.svg";
+import GR from "../icons/gr.svg";
 import GS from "../icons/gs.svg";
 import GT from "../icons/gt.svg";
 import GU from "../icons/gu.svg";
@@ -101,6 +103,7 @@ import HN from "../icons/hn.svg";
 import HR from "../icons/hr.svg";
 import HT from "../icons/ht.svg";
 import HU from "../icons/hu.svg";
+import IC from "../icons/ic.svg";
 import ID from "../icons/id.svg";
 import IE from "../icons/ie.svg";
 import IM from "../icons/il.svg";
@@ -256,6 +259,7 @@ const flags = {
     "AF": AF,
     "AG": AG,
     "AI": AI,
+    "AL": AL,
     "AM": AM,
     "AN": AN,
     "AO": AO,
@@ -343,6 +347,7 @@ const flags = {
     "GN": GN,
     "GP": GP,
     "GQ": GQ,
+    "GR": GR,
     "GS": GS,
     "GT": GT,
     "GU": GU,
@@ -354,6 +359,7 @@ const flags = {
     "HR": HR,
     "HT": HT,
     "HU": HU,
+    "IC": IC,
     "ID": ID,
     "IE": IE,
     "IM": IM,

@@ -112,7 +112,8 @@ body {
 }
 
 #modal--window__area {
-  max-height: 70%;
+  max-height: 80%;
+  overflow-y: scroll;
 }
 
 .modal--list {
@@ -171,7 +172,7 @@ body {
   display: inline-block;
   padding-right: 20px;
   padding-bottom: 15px;
-  width: 220px;
+  width: 270px;
 }
 
 .country--text__placeholder {
