@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import Country from './Countries/country_holder';
 import CountriesList from '../../content/countries.json';
 
+import ModalList from './modal_list';
+
 import UkFlag from '../../icons/gb.svg';
 
 class Modal extends React.Component{
@@ -15,6 +17,10 @@ class Modal extends React.Component{
         }
     }
 
+    componentDidMount() {
+        console.log(CountriesList.Europe);
+    }
+
     setActive() {}
 
     setInactive() {}
@@ -23,45 +29,28 @@ class Modal extends React.Component{
         return (
             <div id="modal--window">
                 <div id="modal--window__title">Select Your Country</div>
-                <div className="modal--list">
-                    <div className="separator"></div>
-                    <div className="modal--list__title">ASIA & PACIFIC</div>
-                </div>
+                <div id="modal--window__area">
+                    <ModalList title="ASIA & PACIFIC"/> 
+                    <ModalList title="CIS"/> 
 
-                <div className="modal--list">
-                    <div className="separator"></div>
-                    <div className="modal--list__title">CIS</div>
-                </div>
-
-                <div className="modal--list">
-                    <div className="separator"></div>
-                    <div className="modal--list__title">EUROPE</div>
-                    <div className="modal--list__container">
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
-                        <Country name="United Kingdom" language="English"/>
+                    <div className="modal--list">
+                        <div className="separator"></div>
+                        <div className="modal--list__title">EUROPE</div>
+                        <div className="modal--list__container">
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                            <Country name="United Kingdom" language="English"/>
+                        </div>
                     </div>
-                    
-                </div>
 
-                <div className="modal--list">
-                    <div className="separator"></div>
-                    <div className="modal--list__title">MIDDLE EAST & AFRICA</div>
-                </div>
-
-                <div className="modal--list">
-                    <div className="separator"></div>
-                    <div className="modal--list__title">NORTH AMERICA </div>
-                </div>
-
-                <div className="modal--list">
-                    <div className="separator"></div>
-                    <div className="modal--list__title">SOUTH AMERICA </div>
+                    <ModalList title="MIDDLE EAST & AFRICA"/> 
+                    <ModalList title="NORTH AMERICA"/> 
+                    <ModalList title="SOUTH AMERICA"/> 
                 </div>
             </div>
         )

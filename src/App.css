@@ -111,6 +111,10 @@ body {
   font-weight: bold;
 }
 
+#modal--window__area {
+  max-height: 70%;
+}
+
 .modal--list {
   width: 90%;
   margin: auto;
