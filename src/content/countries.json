@@ -389,6 +389,82 @@
             "code": "VI",
             "language": "English"
         }
+    ],
+    "SOUTH AMERICA": [
+        {
+            "name": "Argentina",
+            "code": "AR",
+            "language": "Español"
+        },
+        {
+            "name": "Bolivia",
+            "code": "BO",
+            "language": "Español"
+        },
+        {
+            "name": "Brazil",
+            "code": "BR",
+            "language": "Português"
+        },
+        {
+            "name": "Chile",
+            "code": "CL",
+            "language": "Español"
+        },
+        {
+            "name": "Colombia",
+            "code": "CO",
+            "language": "Español"
+        },
+        {
+            "name": "Ecuador",
+            "code": "EC",
+            "language": "Español"
+        },
+        {
+            "name": "Falkland Islands",
+            "code": "FK",
+            "language": "English"
+        },
+        {
+            "name": "French Guiana",
+            "code": "GF",
+            "language": "Français"
+        },
+        {
+            "name": "Guyana",
+            "code": "GY",
+            "language": "English"
+        }, 
+        {
+            "name": "Guyana",
+            "code": "GY",
+            "language": "English"
+        },
+        {
+            "name": "Paraguay",
+            "code": "PY",
+            "language": "Guarani"
+        },
+        {
+            "name": "Peru",
+            "code": "PE",
+            "language": "Español"
+        },
+        {
+            "name": "Suriname",
+            "code": "SR",
+            "language": "Nederlands"
+        },
+        {
+            "name": "Urugauy",
+            "code": "UY",
+            "language": "Español"
+        },
+        {
+            "name": "Venezuela",
+            "code": "VE",
+            "language": "Español"
+        }
     ] 
-    
 }
