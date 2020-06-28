@@ -121,8 +121,21 @@ body {
   margin: auto;
 }
 
+.modal--list__accessor {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .modal--list__container {
   padding: 5px;
+}
+
+.modal--list__container.visible {
+  display: block;
+}
+
+.modal--list__container.hidden {
+  display: none;
 }
 
 .modal--list__title { 
@@ -134,7 +147,8 @@ body {
 }
 
 .modal--list__toggle {
-  float: right;
+  float: right; 
+  cursor: pointer;
 }
 
 .separator {
@@ -178,4 +192,8 @@ body {
 .country--text__placeholder {
   display: inline-block;
   padding-left: 10px;
+}
+
+.country--icon {
+  cursor: pointer;
 }

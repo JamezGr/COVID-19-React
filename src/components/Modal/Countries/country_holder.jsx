@@ -11,7 +11,7 @@ class Country extends React.Component {
 
         return(
             <div className="country--placeholder">
-                <img className="country--icon" src={flags[type]} style={{width: "60px", height:"40px"}}/>
+                <img className="country--icon" title={name} src={flags[type]} style={{width: "60px", height:"40px"}}/>
                 <div className="country--text__placeholder">
                     <div className="country--text__name">{name}</div>
                     <div className="country--text__lang">{language}</div>
