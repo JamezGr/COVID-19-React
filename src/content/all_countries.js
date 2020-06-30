@@ -1,14 +1,14 @@
 let countries = {
     "All Countries": {
         "AD": "Andorra", // DONE
-        "AE": "United Arab Emirates",
+        "AE": "United Arab Emirates", // DONE
         "AF": "Afghanistan",
         "AG": "Antigua and Barbuda", // DONE
         "AI": "Anguilla", // DONE
         "AL": "Albania", // DONE
         "AM": "Armenia",
         "AN": "Netherlands Antilles",
-        "AO": "Angola",
+        "AO": "Angola", // DONE
         "AQ": "Antarctica",
         "AR": "Argentina", // DONE
         "AS": "American Samoa",
@@ -21,11 +21,11 @@ let countries = {
         "BB": "Barbados", // DONE
         "BD": "Bangladesh",
         "BE": "Belgium", // DONE
-        "BF": "Burkina Faso",
+        "BF": "Burkina Faso", // DONE
         "BG": "Bulgaria", // DONE
-        "BH": "Bahrain",
+        "BH": "Bahrain", // DONE
         "BI": "Burundi",
-        "BJ": "Benin",
+        "BJ": "Benin", // DONE
         "BL": "Saint Barthélemy", // DONE
         "BM": "Bermuda", // DONE
         "BN": "Brunei Darussalam",
@@ -35,24 +35,24 @@ let countries = {
         "BS": "Bahamas", // DONE
         "BT": "Bhutan",
         "BV": "Bouvet Island",
-        "BW": "Botswana",
+        "BW": "Botswana", // DONE
         "BY": "Belarus",
         "BZ": "Belize", // DONE
         "CA": "Canada", // DONE
         "CC": "Cocos (Keeling) Islands",
-        "CD": "Congo, the Democratic Republic of the",
-        "CF": "Central African Republic",
+        "CD": "Congo, the Democratic Republic of the", // DONE
+        "CF": "Central African Republic", // DONE
         "CG": "Congo",
         "CH": "Switzerland", // DONE
-        "CI": "C\u00f4te d'Ivoire",
+        "CI": "Côte d'Ivoire", // DONE
         "CK": "Cook Islands",
         "CL": "Chile", // DONE
-        "CM": "Cameroon",
+        "CM": "Cameroon", // DONE
         "CN": "China",
         "CO": "Colombia", // DONE
         "CR": "Costa Rica", // DONE
         "CU": "Cuba", // DONE
-        "CV": "Cape Verde",
+        "CV": "Cape Verde", // DONE
         "CW": "Cura\u00e7ao",
         "CX": "Christmas Island",
         "CY": "Cyprus", // DONE
@@ -62,14 +62,14 @@ let countries = {
         "DK": "Denmark", // DONE
         "DM": "Dominica", // DONE
         "DO": "Dominican Republic",
-        "DZ": "Algeria",
+        "DZ": "Algeria", // DONE
         "EC": "Ecuador",
         "EE": "Estonia", // DONE
         "EG": "Egypt",
-        "EH": "Western Sahara",
-        "ER": "Eritrea",
+        "EH": "Western Sahara", // DONE
+        "ER": "Eritrea", // DONE
         "ES": "Spain", // DONE
-        "ET": "Ethiopia",
+        "ET": "Ethiopia", // DONE
         "EU": "Europe",
         "FI": "Finland", // DONE
         "FJ": "Fiji",
@@ -77,7 +77,7 @@ let countries = {
         "FM": "Micronesia, Federated States of",
         "FO": "Faroe Islands", // DONE
         "FR": "France", // DONE
-        "GA": "Gabon",
+        "GA": "Gabon", // DONE
         "GB-ENG": "England",
         "GB-NIR": "Northern Ireland",
         "GB-SCT": "Scotland",
@@ -87,13 +87,13 @@ let countries = {
         "GE": "Georgia",
         "GF": "French Guiana", // DONE
         "GG": "Guernsey", // DONE
-        "GH": "Ghana",
+        "GH": "Ghana", // DONE
         "GI": "Gibraltar",
         "GL": "Greenland", // DONE
         "GM": "Gambia",
-        "GN": "Guinea",
+        "GN": "Guinea", // DONE
         "GP": "Guadeloupe", // DONE
-        "GQ": "Equatorial Guinea",
+        "GQ": "Equatorial Guinea", // DONE
         "GR": "Greece", // DONE
         "GS": "South Georgia and the South Sandwich Islands",
         "GT": "Guatemala", // DONE
@@ -108,68 +108,68 @@ let countries = {
         "HU": "Hungary", // DONE
         "ID": "Indonesia",
         "IE": "Ireland", // DONE
-        "IL": "Israel",
+        "IL": "Israel", // DONE
         "IM": "Isle of Man", // DONE
         "IN": "India",
         "IO": "British Indian Ocean Territory",
-        "IQ": "Iraq",
-        "IR": "Iran, Islamic Republic of",
+        "IQ": "Iraq", // DONE
+        "IR": "Iran, Islamic Republic of", // DONE
         "IS": "Iceland", // DONE
         "IT": "Italy", // DONE
         "JE": "Jersey", // DONE
         "JM": "Jamaica",
-        "JO": "Jordan",
+        "JO": "Jordan", // DONE
         "JP": "Japan",
-        "KE": "Kenya",
+        "KE": "Kenya", // DONE
         "KG": "Kyrgyzstan",
         "KH": "Cambodia",
         "KI": "Kiribati",
-        "KM": "Comoros",
+        "KM": "Comoros", // DONE
         "KN": "Saint Kitts and Nevis",
         "KP": "Korea, Democratic People's Republic of",
         "KR": "Korea, Republic of",
-        "KW": "Kuwait",
+        "KW": "Kuwait", // DONE
         "KY": "Cayman Islands",
         "KZ": "Kazakhstan",
         "LA": "Lao People's Democratic Republic",
-        "LB": "Lebanon",
+        "LB": "Lebanon", // DONE
         "LC": "Saint Lucia", // DONE
         "LI": "Liechtenstein", // DONE
         "LK": "Sri Lanka",
-        "LR": "Liberia",
-        "LS": "Lesotho",
+        "LR": "Liberia", // DONE
+        "LS": "Lesotho", // DONE
         "LT": "Lithuania",
         "LU": "Luxembourg", // DONE
         "LV": "Latvia", // DONE
-        "LY": "Libya",
-        "MA": "Morocco",
+        "LY": "Libya", // DONE
+        "MA": "Morocco", // DONE
         "MC": "Monaco", // DONE
         "MD": "Moldova, Republic of", // DONE
         "ME": "Montenegro",
         "MF": "Saint Martin", // DONE
-        "MG": "Madagascar",
+        "MG": "Madagascar", // DONE
         "MH": "Marshall Islands",
         "MK": "Macedonia, the former Yugoslav Republic of", // DONE
-        "ML": "Mali",
+        "ML": "Mali", // DONE
         "MM": "Myanmar",
         "MN": "Mongolia",
         "MO": "Macao",
         "MP": "Northern Mariana Islands",
         "MQ": "Martinique", // DONE
-        "MR": "Mauritania",
+        "MR": "Mauritania", // DONE
         "MS": "Montserrat", // DONE
         "MT": "Malta", // DONE
-        "MU": "Mauritius",
+        "MU": "Mauritius", // DONE
         "MV": "Maldives",
-        "MW": "Malawi",
+        "MW": "Malawi", // DONE
         "MX": "Mexico", // DONE
         "MY": "Malaysia",
         "MZ": "Mozambique",
-        "NA": "Namibia",
+        "NA": "Namibia", // DONE
         "NC": "New Caledonia",
-        "NE": "Niger",
+        "NE": "Niger", // DONE
         "NF": "Norfolk Island",
-        "NG": "Nigeria",
+        "NG": "Nigeria", // DONE
         "NI": "Nicaragua", // DONE
         "NL": "Netherlands", // DONE
         "NO": "Norway", // DONE
@@ -177,7 +177,7 @@ let countries = {
         "NR": "Nauru",
         "NU": "Niue",
         "NZ": "New Zealand", // DONE
-        "OM": "Oman",
+        "OM": "Oman", // DONE
         "PA": "Panama", // DONE
         "PE": "Peru", // DONE
         "PF": "French Polynesia",
@@ -188,55 +188,55 @@ let countries = {
         "PM": "Saint Pierre and Miquelon", // DONE
         "PN": "Pitcairn",
         "PR": "Puerto Rico",
-        "PS": "Palestine",
+        "PS": "Palestine", // DONE
         "PT": "Portugal", // DONE
         "PW": "Palau",
         "PY": "Paraguay", // DONE
-        "QA": "Qatar",
-        "RE": "Réunion",
+        "QA": "Qatar", // DONE
+        "RE": "Réunion", // DONE
         "RO": "Romania", // DONE
         "RS": "Serbia",
         "RU": "Russian Federation", // DONE
-        "RW": "Rwanda",
-        "SA": "Saudi Arabia",
+        "RW": "Rwanda", // DONE
+        "SA": "Saudi Arabia", // DONE
         "SB": "Solomon Islands",
-        "SC": "Seychelles",
-        "SD": "Sudan",
+        "SC": "Seychelles", // DONE
+        "SD": "Sudan", // DONE
         "SE": "Sweden", // DONE
         "SG": "Singapore",
-        "SH": "Saint Helena, Ascension and Tristan da Cunha",
+        "SH": "Saint Helena, Ascension and Tristan da Cunha", // 
         "SI": "Slovenia", // DONE
         "SJ": "Svalbard and Jan Mayen Islands",
         "SK": "Slovakia",
-        "SL": "Sierra Leone",
+        "SL": "Sierra Leone", // DONE
         "SM": "San Marino", // DONE
-        "SN": "Senegal",
-        "SO": "Somalia",
-        "SR": "Suriname",
-        "SS": "South Sudan",
-        "ST": "Sao Tome and Principe",
+        "SN": "Senegal", // DONE
+        "SO": "Somalia", // DONE
+        "SR": "Suriname", // DONE
+        "SS": "South Sudan", // DONE
+        "ST": "Sao Tome and Principe", // DONE
         "SV": "El Salvador", // DONE
         "SX": "Sint Maarten (Dutch part)", // DONE
-        "SY": "Syrian Arab Republic",
-        "SZ": "Swaziland",
+        "SY": "Syrian Arab Republic", // DONE
+        "SZ": "Swaziland", // DONE
         "TC": "Turks and Caicos Islands",
-        "TD": "Chad",
+        "TD": "Chad", // DONE
         "TF": "French Southern Territories",
-        "TG": "Togo",
+        "TG": "Togo", // DONE
         "TH": "Thailand",
         "TJ": "Tajikistan",
         "TK": "Tokelau",
         "TL": "Timor-Leste",
         "TM": "Turkmenistan",
-        "TN": "Tunisia",
+        "TN": "Tunisia", // DONE
         "TO": "Tonga",
-        "TR": "Turkey",
+        "TR": "Turkey", // DONE
         "TT": "Trinidad and Tobago", // DONE
         "TV": "Tuvalu",
         "TW": "Taiwan",
-        "TZ": "Tanzania, United Republic of",
+        "TZ": "Tanzania, United Republic of", // DONE
         "UA": "Ukraine", // DONE
-        "UG": "Uganda",
+        "UG": "Uganda", // DONE
         "UM": "US Minor Outlying Islands",
         "US": "United States",
         "UY": "Uruguay", // DONE
@@ -251,10 +251,10 @@ let countries = {
         "WF": "Wallis and Futuna Islands",
         "XK": "Kosovo",
         "WS": "Samoa",
-        "YE": "Yemen",
-        "YT": "Mayotte",
-        "ZA": "South Africa",
-        "ZM": "Zambia",
-        "ZW": "Zimbabwe"
+        "YE": "Yemen", // DONE
+        "YT": "Mayotte", // DONE
+        "ZA": "South Africa", // DONE
+        "ZM": "Zambia", // DONE
+        "ZW": "Zimbabwe" // DONE
     }
 }

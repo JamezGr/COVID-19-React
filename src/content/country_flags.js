@@ -106,6 +106,7 @@ import HU from "../icons/hu.svg";
 import IC from "../icons/ic.svg";
 import ID from "../icons/id.svg";
 import IE from "../icons/ie.svg";
+import IL from "../icons/il.svg";
 import IM from "../icons/il.svg";
 import IN from "../icons/in.svg";
 import IO from "../icons/io.svg";
@@ -362,6 +363,7 @@ const flags = {
     "IC": IC,
     "ID": ID,
     "IE": IE,
+    "IL": IL,
     "IM": IM,
     "IN": IN,
     "IO": IO,

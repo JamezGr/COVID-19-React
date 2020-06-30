@@ -466,5 +466,382 @@
             "code": "VE",
             "language": "Español"
         }
-    ] 
+    ],
+    "MIDDLE EAST & AFRICA": [
+        {
+            "name": "Algeria",
+            "code": "DZ",
+            "language": "عربى"
+        },
+        {
+            "name": "Angola",
+            "code": "AO",
+            "language": "Português"
+        },
+        {
+            "name": "Bahrain",
+            "code": "BH",
+            "language": "عربى"
+        },
+        {
+            "name": "Benin",
+            "code": "AO",
+            "language": "Français"
+        },
+        {
+            "name": "Botswana",
+            "code": "BW",
+            "language": "English"
+        },
+        {
+            "name": "Burkina Faso",
+            "code": "BF",
+            "language": "Français"
+        },
+        {
+            "name": "Burundi",
+            "code": "BI",
+            "language": "Français"
+        },
+        {
+            "name": "Cameroon",
+            "code": "CM",
+            "language": "Français"
+        },
+        {
+            "name": "Cape Verde",
+            "code": "CV",
+            "language": "Português"
+        },
+        {
+            "name": "Central African Republic",
+            "code": "CF",
+            "language": "Français"
+        },
+        {
+            "name": "Chad",
+            "code": "TD",
+            "language": "Français/عربى"
+        },
+        {
+            "name": "Comoros",
+            "code": "KM",
+            "language": "Français/عربى"
+        },
+        {
+            "name": "Congo",
+            "code": "CD",
+            "language": "Français"
+        },
+        {
+            "name": "Djibouti",
+            "code": "DJ",
+            "language": "Français/عربى"
+        },
+        {
+            "name": "Egypt",
+            "code": "EG",
+            "language": "عربى"
+        },
+        {
+            "name": "Equatorial Guinea",
+            "code": "GQ",
+            "language": "Español/Français"
+        },
+        {
+            "name": "Eritrea",
+            "code": "ER",
+            "language": "Tigrinya"
+        },
+        {
+            "name": "Eritrea",
+            "code": "ER",
+            "language": "Tigrinya"
+        },
+        {
+            "name": "Ethiopia",
+            "code": "ET",
+            "language": "አማርኛ"
+        },
+        {
+            "name": "Gabon",
+            "code": "GA",
+            "language": "Français"
+        },
+        {
+            "name": "Gambia",
+            "code": "GM",
+            "language": "English"
+        },
+        {
+            "name": "Ghana",
+            "code": "GH",
+            "language": "English"
+        },
+        {
+            "name": "Guinea",
+            "code": "GN",
+            "language": "Français"
+        },
+        {
+            "name": "Guinea-Bissau",
+            "code": "GW",
+            "language": "Português"
+        },
+        {
+            "name": "Iran",
+            "code": "IR",
+            "language": "فارسی"
+        },
+        {
+            "name": "Iraq",
+            "code": "IQ",
+            "language": "کوردی/عربى"
+        },
+        {
+            "name": "Israel",
+            "code": "IL",
+            "language": "עִברִית"
+        },
+        {
+            "name": "Israel",
+            "code": "IL",
+            "language": "עִברִית"
+        },
+        {
+            "name": "Ivory Coast/Côte d'Ivoire",
+            "code": "CI",
+            "language": "Français"
+        },
+        {
+            "name": "Jordan",
+            "code": "JO",
+            "language": "کوردی"
+        },
+        {
+            "name": "Kenya",
+            "code": "KE",
+            "language": "Kiswahili"
+        },
+        {
+            "name": "Kuwait",
+            "code": "KW",
+            "language": "کوردی"
+        },
+        {
+            "name": "Lebanon",
+            "code": "LB",
+            "language": "کوردی"
+        },
+        {
+            "name": "Lesotho",
+            "code": "LS",
+            "language": "Sesotho"
+        },
+        {
+            "name": "Liberia",
+            "code": "LR",
+            "language": "English"
+        },
+        {
+            "name": "Libya",
+            "code": "LY",
+            "language": "کوردی"
+        },
+        {
+            "name": "Madagascar",
+            "code": "MG",
+            "language": "Malagasy/Français"
+        },
+        {
+            "name": "Malawi",
+            "code": "MW",
+            "language": "English"
+        },
+        {
+            "name": "Mali",
+            "code": "ML",
+            "language": "English"
+        },
+        {
+            "name": "Mauritania",
+            "code": "MR",
+            "language": "کوردی"
+        },
+        {
+            "name": "Mauritius",
+            "code": "MU",
+            "language": "English"
+        },
+        {
+            "name": "Mayotte",
+            "code": "YT",
+            "language": "Français"
+        },
+        {
+            "name": "Morocco",
+            "code": "MA",
+            "language": "کوردی"
+        },
+        {
+            "name": "Mozambique",
+            "code": "MZ",
+            "language": "Português"
+        },
+        {
+            "name": "Namibia",
+            "code": "NA",
+            "language": "English"
+        },
+        {
+            "name": "Niger",
+            "code": "NE",
+            "language": "Français"
+        },
+        {
+            "name": "Nigeria",
+            "code": "NG",
+            "language": "English"
+        },
+        {
+            "name": "Oman",
+            "code": "OM",
+            "language": "کوردی"
+        },
+        {
+            "name": "Palestine",
+            "code": "PS",
+            "language": "کوردی"
+        },
+        {
+            "name": "Qatar",
+            "code": "QA",
+            "language": "کوردی"
+        },
+        {
+            "name": "Republic of the Congo",
+            "code": "CD",
+            "language": "Français"
+        },
+        {
+            "name": "Réunion",
+            "code": "RE",
+            "language": "Français"
+        },
+        {
+            "name": "Rwanda",
+            "code": "RW",
+            "language": "Kinyarwanda/English"
+        },
+        {
+            "name": "Saint Helena",
+            "code": "SH",
+            "language": "English"
+        },
+        {
+            "name": "São Tomé and Príncipe",
+            "code": "ST",
+            "language": "Português"
+        },
+        {
+            "name": "Saudi Arabia",
+            "code": "SA",
+            "language": "کوردی"
+        },
+        {
+            "name": "Senegal",
+            "code": "SN",
+            "language": "Français"
+        },
+        {
+            "name": "Seychelles",
+            "code": "SC",
+            "language": "Français/English"
+        },
+        {
+            "name": "Sierra Leone",
+            "code": "SL",
+            "language": "English"
+        },
+        {
+            "name": "Somalia",
+            "code": "SO",
+            "language": "Somali"
+        },
+        {
+            "name": "South Africa",
+            "code": "ZA",
+            "language": "Afrikaans"
+        },
+        {
+            "name": "South Sudan",
+            "code": "SS",
+            "language": "English"
+        },
+        {
+            "name": "Sudan",
+            "code": "SD",
+            "language": "کوردی/English"
+        },
+        {
+            "name": "Swaziland",
+            "code": "SZ",
+            "language": "Bantu/English"
+        },
+        {
+            "name": "Syria",
+            "code": "SY",
+            "language": "کوردی"
+        },
+        {
+            "name": "Tanzania",
+            "code": "TZ",
+            "language": "Swahili"
+        },
+        {
+            "name": "Togo",
+            "code": "TG",
+            "language": "Français"
+        },
+        {
+            "name": "Tunisia",
+            "code": "TN",
+            "language": "کوردی"
+        },
+        {
+            "name": "Turkey",
+            "code": "TR",
+            "language": "Türk"
+        },
+        {
+            "name": "Uganda",
+            "code": "UG",
+            "language": "Swahili"
+        },
+        {
+            "name": "United Arab Emirates",
+            "code": "AE",
+            "language": "کوردی"
+        },
+        {
+            "name": "Western Sahara",
+            "code": "EH",
+            "language": "کوردی"
+        },
+        {
+            "name": "Yemen",
+            "code": "YE",
+            "language": "کوردی"
+        },
+        {
+            "name": "Zambia",
+            "code": "ZM",
+            "language": "English"
+        },
+        {
+            "name": "Zimbabwe",
+            "code": "ZW",
+            "language": "Shona/English"
+        }
+    ]
 }
