@@ -843,5 +843,137 @@
             "code": "ZW",
             "language": "Shona/English"
         }
+    ],
+    "ASIA & PACIFIC": [
+        {
+            "name": "American Samoa",
+            "code": "AS",
+            "language": "Samoan/English"
+        },
+        {
+            "name": "Australia",
+            "code": "AU",
+            "language": "English"
+        },
+        {
+            "name": "Cook Islands",
+            "code": "CK",
+            "language": "English"
+        },
+        {
+            "name": "Federated Micronesia",
+            "code": "FM",
+            "language": "English"
+        },
+        {
+            "name": "Fiji",
+            "code": "FJ",
+            "language": "English"
+        },
+        {
+            "name": "French Polynesia",
+            "code": "PF",
+            "language": "Français"
+        },
+        {
+            "name": "Guam",
+            "code": "GU",
+            "language": "Chamorro/English"
+        },
+        {
+            "name": "Kiribati",
+            "code": "KI",
+            "language": "Gilbertese/English"
+        },
+        {
+            "name": "Marshall Islands",
+            "code": "MH",
+            "language": "Marshallese/English"
+        },
+        {
+            "name": "Nauru",
+            "code": "NR",
+            "language": "Nauruan/English"
+        },
+        {
+            "name": "New Caledonia",
+            "code": "NC",
+            "language": "Français"
+        },
+        {
+            "name": "New Zealand",
+            "code": "NZ",
+            "language": "English"
+        },
+        {
+            "name": "Niue",
+            "code": "NU",
+            "language": "Nieuan/English"
+        },
+        {
+            "name": "Norfolk Island",
+            "code": "NF",
+            "language": "Norfuk/English"
+        },
+        {
+            "name": "Norfolk Island",
+            "code": "NF",
+            "language": "Norfuk/English"
+        },
+        {
+            "name": "Northern Mariana Islands",
+            "code": "MP",
+            "language": "English"
+        },
+        {
+            "name": "Palau",
+            "code": "PW",
+            "language": "Palauan/English"
+        },
+        {
+            "name": "Papua New Guinea",
+            "code": "PG",
+            "language": "English"
+        },
+        {
+            "name": "Pitcairn Islands",
+            "code": "PN",
+            "language": "Pitkern/English"
+        },
+        {
+            "name": "Samoa",
+            "code": "WS",
+            "language": "Samoan/English"
+        },
+        {
+            "name": "Solomon Islands",
+            "code": "WS",
+            "language": "Samoan/English"
+        },
+        {
+            "name": "Tokelau",
+            "code": "TK",
+            "language": "Tokelauan/English"
+        },
+        {
+            "name": "Tonga",
+            "code": "TO",
+            "language": "Tongan/English"
+        },
+        {
+            "name": "Tuvalu",
+            "code": "TV",
+            "language": "Tuvaluan/English"
+        },
+        {
+            "name": "Vanuatu",
+            "code": "VU",
+            "language": "Français/English"
+        },
+        {
+            "name": "Wallis and Futuna Islands",
+            "code": "WF",
+            "language": "Français"
+        }
     ]
 }

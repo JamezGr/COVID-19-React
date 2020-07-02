@@ -164,13 +164,15 @@ import MX from "../icons/mx.svg";
 import MY from "../icons/my.svg";
 import MZ from "../icons/mz.svg";
 import NA from "../icons/na.svg";
+import NC from "../icons/nc.svg";
 import NE from "../icons/ne.svg";
 import NF from "../icons/nf.svg";
 import NG from "../icons/ng.svg";
 import NI from "../icons/ni.svg";
 import NL from "../icons/nl.svg";
 import NO from "../icons/no.svg";
-import NP from "../icons/nr.svg";
+import NP from "../icons/np.svg";
+import NR from "../icons/nr.svg";
 import NU from "../icons/nu.svg";
 import NZ from "../icons/nz.svg";
 import OM from "../icons/om.svg";
@@ -421,6 +423,7 @@ const flags = {
     "MY": MY,
     "MZ": MZ,
     "NA": NA,
+    "NC": NC,
     "NE": NE,
     "NF": NF,
     "NG": NG,
@@ -428,6 +431,7 @@ const flags = {
     "NL": NL,
     "NO": NO,
     "NP": NP,
+    "NR": NR,
     "NU": NU,
     "NZ": NZ,
     "OM": OM,
