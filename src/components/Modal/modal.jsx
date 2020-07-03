@@ -30,7 +30,7 @@ class Modal extends React.Component{
                 <div id="modal--window__title">Select Your Country</div>
                 <div id="modal--window__area">
                     <ModalList title="ASIA & PACIFIC" type="COUNTRIES"/> 
-                    <ModalList title="CIS" type="COUNTRIES"/> 
+                    <ModalList title="ANTARCTICA" type="COUNTRIES"/> 
                     <ModalList title="EUROPE" type="COUNTRIES"/> 
                     <ModalList title="MIDDLE EAST & AFRICA" type="COUNTRIES"/> 
                     <ModalList title="NORTH AMERICA" type="COUNTRIES"/> 

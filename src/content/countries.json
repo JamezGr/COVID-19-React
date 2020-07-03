@@ -57,6 +57,14 @@
         "code": "EE",
         "language": "Eesti"
         }, {
+        "name": "Europe",
+        "code": "EU",
+        "language": "English"
+        }, {
+        "name": "England",
+        "code": "GB-ENG",
+        "language": "English"
+        }, {
         "name": "Spain",
         "code": "ES",
         "language": "Español"
@@ -73,8 +81,16 @@
         "code": "FR",
         "language": "Français"
         }, {
+        "name": "French Southern Territories",
+        "code": "TF",
+        "language": "Français"
+        }, {
         "name": "United Kingdon",
         "code": "GB",
+        "language": "English"
+        }, {
+        "name": "Gibraltar",
+        "code": "GI",
         "language": "English"
         }, {
         "name": "Guernsey",
@@ -113,6 +129,10 @@
         "code": "JE",
         "language": "English"
         }, {
+        "name": "Kosovo",
+        "code": "XK",
+        "language": "Shqiptar"
+        }, {
         "name": "Liechtenstein",
         "code": "LI",
         "language": "Deutsche"
@@ -132,6 +152,10 @@
         "name": "Monaco",
         "code": "MC",
         "language": "Français"
+        }, {
+        "name": "Montenegro",
+        "code": "ME",
+        "language": "Montenegrin"
         }, {
         "name": "Moldova, Republic of",
         "code": "MD",
@@ -153,6 +177,10 @@
         "code": "NO",
         "language": "Norsk"
         }, {
+        "name": "Northern Ireland",
+        "code": "GB-NIR",
+        "language": "Irish"
+        }, {
         "name": "Poland",
         "code": "PL",
         "language": "Polskie"
@@ -168,6 +196,14 @@
         "name": "Russian Federation",
         "code": "RU",
         "language": "русский"
+        }, {
+        "name": "Serbia",
+        "code": "RS",
+        "language": "Српски"
+        }, {
+        "name": "Scotland",
+        "code": "GB-SCT",
+        "language": "English"
         }, {
         "name": "Sweden",
         "code": "SE",
@@ -188,6 +224,10 @@
         "name": "San Marino",
         "code": "SM",
         "language": "Italiano"
+        }, {
+        "name": "Wales",
+        "code": "GB-WLS",
+        "language": "Cymraeg"
         }, {
         "name": "Ukraine",
         "code": "UA",
@@ -345,6 +385,11 @@
             "language": "English"
         },
         {
+            "name": "Saint Kitts and Nevis",
+            "code": "KN",
+            "language": "English"
+        },
+        {
             "name": "Saint Lucia",
             "code": "LC",
             "language": "English"
@@ -388,6 +433,11 @@
             "name": "United States Virgin Islands",
             "code": "VI",
             "language": "English"
+        },
+        {
+            "name": "US Minor Outlying Islands",
+            "code": "UM",
+            "language": "English"
         }
     ],
     "SOUTH AMERICA": [
@@ -395,6 +445,11 @@
             "name": "Argentina",
             "code": "AR",
             "language": "Español"
+        },
+        {
+            "name": "Aruba",
+            "code": "AW",
+            "language": "Nederlands"
         },
         {
             "name": "Bolivia",
@@ -415,6 +470,11 @@
             "name": "Colombia",
             "code": "CO",
             "language": "Español"
+        },
+        {
+            "name": "Curaçao",
+            "code": "CW",
+            "language": "Nederlands"
         },
         {
             "name": "Ecuador",
@@ -442,6 +502,11 @@
             "language": "English"
         },
         {
+            "name": "Netherlands Antilles",
+            "code": "AN",
+            "language": "Nederlands"
+        },
+        {
             "name": "Paraguay",
             "code": "PY",
             "language": "Guarani"
@@ -455,6 +520,11 @@
             "name": "Suriname",
             "code": "SR",
             "language": "Nederlands"
+        },
+        {
+            "name": "South Sandwich Islands",
+            "code": "GS",
+            "language": "English"
         },
         {
             "name": "Urugauy",
@@ -876,6 +946,11 @@
             "language": "རྫོང་ཁ"
         },
         {
+            "name": "British Indian Ocean ",
+            "code": "IO",
+            "language": "English"
+        },
+        {
             "name": "Brunei",
             "code": "BN",
             "language": "بهاس ملايو‎"
@@ -889,6 +964,16 @@
             "name": "China",
             "code": "CN",
             "language": "普通话"
+        },
+        {
+            "name": "Christmas Island",
+            "code": "CX",
+            "language": "English"
+        },
+        {
+            "name": "Cocos (Keeling) Islands",
+            "code": "CC",
+            "language": "Melayu/English"
         },
         {
             "name": "Cook Islands",
@@ -919,6 +1004,16 @@
             "name": "Guam",
             "code": "GU",
             "language": "Chamorro/English"
+        },
+        {
+            "name": "Heard & McDonald Islands",
+            "code": "HM",
+            "language": "English"
+        },
+        {
+            "name": "Hong Kong",
+            "code": "HK",
+            "language": "中文"
         },
         {
             "name": "India",
@@ -959,6 +1054,11 @@
             "name": "Lebanon",
             "code": "LB",
             "language": "Lebanese"
+        },
+        {
+            "name": "Macao",
+            "code": "MO",
+            "language": "Português"
         },
         {
             "name": "Malaysia",
@@ -1144,6 +1244,13 @@
             "name": "Wallis and Futuna Islands",
             "code": "WF",
             "language": "Français"
+        }
+    ],
+    "ANTARCTICA": [
+        {
+            "name": "Antarctica",
+            "code": "AQ",
+            "language": "English"
         }
     ]
 }
