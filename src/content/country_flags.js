@@ -46,6 +46,7 @@ import CI from "../icons/ci.svg";
 import CK from "../icons/ck.svg";
 import CL from "../icons/cl.svg";
 import CM from "../icons/cm.svg";
+import CN from "../icons/cn.svg";
 import CO from "../icons/co.svg";
 import CR from "../icons/cr.svg";
 import CU from "../icons/cu.svg";
@@ -305,6 +306,7 @@ const flags = {
     "CK": CK,
     "CL": CL,
     "CM": CM,
+    "CN": CN,
     "CO": CO,
     "CR": CR,
     "CU": CU,

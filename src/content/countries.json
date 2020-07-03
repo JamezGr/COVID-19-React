@@ -604,11 +604,6 @@
             "language": "עִברִית"
         },
         {
-            "name": "Israel",
-            "code": "IL",
-            "language": "עִברִית"
-        },
-        {
             "name": "Ivory Coast/Côte d'Ivoire",
             "code": "CI",
             "language": "Français"
@@ -846,14 +841,54 @@
     ],
     "ASIA & PACIFIC": [
         {
+            "name": "Afghanistan",
+            "code": "AF",
+            "language": "Pashto/Dari"
+        },
+        {
             "name": "American Samoa",
             "code": "AS",
             "language": "Samoan/English"
         },
         {
+            "name": "Armenia",
+            "code": "AM",
+            "language": "Հայաստան"
+        },
+        {
             "name": "Australia",
             "code": "AU",
             "language": "English"
+        },
+        {
+            "name": "Azerbaijan",
+            "code": "AZ",
+            "language": "Azerbaijani"
+        },
+        {
+            "name": "Bangladesh",
+            "code": "BD",
+            "language": "বাংলা"
+        },
+        {
+            "name": "Bhutan",
+            "code": "BT",
+            "language": "རྫོང་ཁ"
+        },
+        {
+            "name": "Brunei",
+            "code": "BN",
+            "language": "بهاس ملايو‎"
+        },
+        {
+            "name": "Cambodia",
+            "code": "KH",
+            "language": "Khmer"
+        },
+        {
+            "name": "China",
+            "code": "CN",
+            "language": "普通话"
         },
         {
             "name": "Cook Islands",
@@ -876,9 +911,34 @@
             "language": "Français"
         },
         {
+            "name": "Georgia",
+            "code": "GE",
+            "language": "ქართული ენა"
+        },
+        {
             "name": "Guam",
             "code": "GU",
             "language": "Chamorro/English"
+        },
+        {
+            "name": "India",
+            "code": "IN",
+            "language": "हिन्दी"
+        },
+        {
+            "name": "Indonesia",
+            "code": "ID",
+            "language": "Indonesian"
+        },
+        {
+            "name": "Japan",
+            "code": "JP",
+            "language": "日本人"
+        },
+        {
+            "name": "Kazakhstan",
+            "code": "KZ",
+            "language": "Kazakh/русский"
         },
         {
             "name": "Kiribati",
@@ -886,14 +946,54 @@
             "language": "Gilbertese/English"
         },
         {
+            "name": "Kyrgyzstan",
+            "code": "KG",
+            "language": "Kyrgyz/русский"
+        },
+        {
+            "name": "Lao",
+            "code": "LA",
+            "language": "Lao"
+        },
+        {
+            "name": "Lebanon",
+            "code": "LB",
+            "language": "Lebanese"
+        },
+        {
+            "name": "Malaysia",
+            "code": "MY",
+            "language": "Melayu"
+        },
+        {
+            "name": "Maldives",
+            "code": "MV",
+            "language": "Dhivehi"
+        },
+        {
             "name": "Marshall Islands",
             "code": "MH",
             "language": "Marshallese/English"
         },
         {
+            "name": "Mongolia",
+            "code": "MN",
+            "language": "Монгол"
+        },
+        {
+            "name": "Myanmar",
+            "code": "MM",
+            "language": "ဗမာ"
+        },
+        {
             "name": "Nauru",
             "code": "NR",
             "language": "Nauruan/English"
+        },
+        {
+            "name": "Nepal",
+            "code": "NP",
+            "language": "Nepali"
         },
         {
             "name": "New Caledonia",
@@ -916,14 +1016,39 @@
             "language": "Norfuk/English"
         },
         {
-            "name": "Norfolk Island",
-            "code": "NF",
-            "language": "Norfuk/English"
-        },
-        {
             "name": "Northern Mariana Islands",
             "code": "MP",
             "language": "English"
+        },
+        {
+            "name": "North Korea",
+            "code": "KP",
+            "language": "한국어"
+        },
+        {
+            "name": "Singapore",
+            "code": "SG",
+            "language": "Malay/English/普通话"
+        },
+        {
+            "name": "South Korea",
+            "code": "KR",
+            "language": "한국어"
+        },
+        {
+            "name": "Sri Lanka",
+            "code": "LK",
+            "language": "Tamil"
+        },
+        {
+            "name": "Pakistan",
+            "code": "PK",
+            "language": "Urdu"
+        },
+        {
+            "name": "Pakistan",
+            "code": "PK",
+            "language": "Urdu"
         },
         {
             "name": "Palau",
@@ -934,6 +1059,11 @@
             "name": "Papua New Guinea",
             "code": "PG",
             "language": "English"
+        },
+        {
+            "name": "Philippines",
+            "code": "PH",
+            "language": "Filipino"
         },
         {
             "name": "Pitcairn Islands",
@@ -951,6 +1081,26 @@
             "language": "Samoan/English"
         },
         {
+            "name": "Taiwan",
+            "code": "TW",
+            "language": "普通话"
+        },
+        {
+            "name": "Tajikistan",
+            "code": "TJ",
+            "language": "Tajiki"
+        },
+        {
+            "name": "Thailand",
+            "code": "TH",
+            "language": "ไทย"
+        },
+        {
+            "name": "Timor-Leste",
+            "code": "TL",
+            "language": "Português"
+        },
+        {
             "name": "Tokelau",
             "code": "TK",
             "language": "Tokelauan/English"
@@ -961,14 +1111,34 @@
             "language": "Tongan/English"
         },
         {
+            "name": "Turkey",
+            "code": "TR",
+            "language": "Türk"
+        },
+        {
+            "name": "Turkmenistan",
+            "code": "TM",
+            "language": "Turkmen"
+        },
+        {
             "name": "Tuvalu",
             "code": "TV",
             "language": "Tuvaluan/English"
         },
         {
+            "name": "Uzbekistan",
+            "code": "UZ",
+            "language": "Uzbek"
+        },
+        {
             "name": "Vanuatu",
             "code": "VU",
             "language": "Français/English"
+        },
+        {
+            "name": "Vietnam",
+            "code": "VN",
+            "language": "Tiếng Việt"
         },
         {
             "name": "Wallis and Futuna Islands",
