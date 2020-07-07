@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Country from './Countries/country_holder';
-import CountriesList from '../../content/countries.json';
+import CountriesList from '../../Content/countries.json';
 
 import ModalList from './modal_list';
-
-import UkFlag from '../../icons/gb.svg';
 
 class Modal extends React.Component{
     constructor(props) {
@@ -42,3 +40,9 @@ class Modal extends React.Component{
 }
 
 export default Modal
+
+export const ModalTypes = {
+    SELECT_COUNTRY: 'select-country',
+    SELECT_LANGUAGE: 'select-language',
+    INFO: 'info-about'
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Country from './Countries/country_holder';
-import CountriesList from '../../content/countries.json';
+import CountriesList from '../../Content/countries.json';
 
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';

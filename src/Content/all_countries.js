@@ -9,7 +9,7 @@ const countries = {
         "AM": "Armenia", // DONE
         "AN": "Netherlands Antilles", // DONE
         "AO": "Angola", // DONE
-        "AQ": "Antarctica",
+        "AQ": "Antarctica", // DONE
         "AR": "Argentina", // DONE
         "AS": "American Samoa", // DONE
         "AT": "Austria", // DONE
