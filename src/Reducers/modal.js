@@ -28,30 +28,3 @@ export const modal = (state = initialState, action) => {
         }
     }
 }
-
-export const modalTest = (action, state = initialState, type = ModalType.NONE) => {
-    switch (action.type) {
-        case ModalSettings.SET_ACTIVE: {
-            return {
-                state: ModalState.ACTIVE,
-                contentType: type
-            }
-        }
-        case ModalSettings.SET_INACTIVE: {
-            return {
-                state: ModalState.INACTIVE,
-                contentType: type
-            }
-        }
-
-        case ModalSettings.SET_TYPE: {
-            return {
-                state: state,
-                contentType: type
-            }
-        }
-
-        default:
-            return { state, contentType: type }
-    }
-}

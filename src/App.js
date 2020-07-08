@@ -5,33 +5,29 @@ import './App.css';
 import TopBar from './Components/TopBar/top_bar';
 import Footer from './Components/Footer/footer';
 import Modal from './Components/Modal/modal';
+import Overlay from './Components/Overlay/overlay';
+
 import { setUserOptions } from './Actions';
 
-import { ModalSettings, ModalState, ModalType, setModalActive, setModalInactive } from './Actions';
-import { modal } from './Reducers/modal';
-
-import { createStore } from 'redux'
+import LocalStorageHelper from './Helpers/LocalStorageHelper';
+import { ModalType, setModalActive, setModalInactive } from './Actions';
+import { ModalStore } from './Stores';
 
 let ModalComponent;
 
-const modalStore = createStore(modal);
+ModalStore.subscribe(() => {
+  const MODAL_STATE = ModalStore.getState();
 
-modalStore.subscribe(() => {
-  const MODAL_STATE = modalStore.getState();
-
-  if (MODAL_STATE.contentType == ModalType.NONE) ModalComponent = null;
-  if (MODAL_STATE.contentType == ModalType.COUNTRY_LIST) ModalComponent = <Modal/>;
-
-  console.log("Updated State:", MODAL_STATE.contentType);
+  MODAL_STATE.contentType == ModalType.NONE ? ModalComponent = null: ModalComponent = <Modal/>;
 });
 
-modalStore.dispatch(setModalActive(ModalType.COUNTRY_LIST));
+LocalStorageHelper.hasItem("userCountry") ? ModalStore.dispatch(setModalInactive()): ModalStore.dispatch(setModalActive(ModalType.COUNTRY_LIST))
 
 function App() {
 
   return (
     <div className="App">
-      {ModalComponent != null ? <div id="overlay"></div>: null}
+      {ModalComponent ? <Overlay/>: null}
       <TopBar/>
         {ModalComponent}
       <Footer/>

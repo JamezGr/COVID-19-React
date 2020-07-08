@@ -14,6 +14,12 @@ LocalStorageHelper.setItem = (key, value) => {
     localStorage.setItem(key, value);
 }
 
+LocalStorageHelper.getItem = (key) => {
+    const localStorage = window.localStorage;
+
+    return localStorage.getItem(key);
+}
+
 LocalStorageHelper.removeItem = (key) => {
     const localStorage = window.localStorage;
     localStorage.removeItem(key);

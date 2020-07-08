@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { findDOMNode, render } from 'react-dom';
+
 import flags from '../../../Content/country_flags';
+import LocalStorageHelper from '../../../Helpers/LocalStorageHelper';
+
+import { ModalStore } from '../../../Stores';
+import { setModalInactive } from '../../../Actions';
 
 class Country extends React.Component {
     constructor(props) {
@@ -13,8 +19,15 @@ class Country extends React.Component {
     }
 
     setCountry = (e) => {
-        const country = e.dataset.country;
-        const countryFlag = e.dataset.flag;
+        const userCountry = {
+            name: e.target.dataset.country,
+            flagCode: e.target.dataset.flag
+        }
+
+        LocalStorageHelper.setItem('userCountry', JSON.stringify(userCountry));
+        ModalStore.dispatch(setModalInactive());
+        
+        console.log("LocalStorage", window.localStorage)
     }
 
     render() {
