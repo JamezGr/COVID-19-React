@@ -3,11 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 import TopBar from './Components/TopBar/top_bar';
+import Dashboard from './Components/Dashboard/dashboard';
 import Footer from './Components/Footer/footer';
 import Modal from './Components/Modal/modal';
 import Overlay from './Components/Overlay/overlay';
-
-import { setUserOptions } from './Actions';
 
 import LocalStorageHelper from './Helpers/LocalStorageHelper';
 import { ModalType, setModalActive, setModalInactive } from './Actions';
@@ -29,6 +28,7 @@ function App() {
     <div className="App">
       {ModalComponent ? <Overlay/>: null}
       <TopBar/>
+        <Dashboard/>
         {ModalComponent}
       <Footer/>
     </div>

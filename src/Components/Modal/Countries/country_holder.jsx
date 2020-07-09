@@ -7,6 +7,9 @@ import flags from '../../../Content/country_flags';
 import LocalStorageHelper from '../../../Helpers/LocalStorageHelper';
 
 import { ModalStore } from '../../../Stores';
+import { UserSettingsStore } from '../../../Stores';
+
+import { setUserCountry } from '../../../Actions';
 import { setModalInactive } from '../../../Actions';
 
 class Country extends React.Component {
@@ -26,6 +29,7 @@ class Country extends React.Component {
 
         LocalStorageHelper.setItem('userCountry', JSON.stringify(userCountry));
         ModalStore.dispatch(setModalInactive());
+        UserSettingsStore.dispatch(setUserCountry(userCountry.name, userCountry.flagCode));
         
         console.log("LocalStorage", window.localStorage)
     }
@@ -35,7 +39,7 @@ class Country extends React.Component {
 
         return(
             <div className="country--placeholder">
-                <img className="country--icon" title={name} src={flags[type]} data-flag={type} data-country={name} onClick={this.setCountry} style={{width: "60px", height:"40px"}}/>
+                <img className="country--icon" title={name} src={flags[type]} data-flag={type} data-country={name} onClick={this.setCountry}/>
                 <div className="country--text__placeholder">
                     <div className="country--text__name">{name}</div>
                     <div className="country--text__lang">{language}</div>

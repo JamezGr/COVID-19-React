@@ -1,8 +1,3 @@
-export const TOGGLE_MODAL = 'TOGGLE_MODAL'
-export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
-export const SET_USER_OPTIONS = 'SET_USER_OPTIONS'
-export const SET_API_OPTIONS = 'SET_API_OPTIONS'
-
 export const ModalType = {
     COUNTRY_LIST: "COUNTRY_LIST",
     LANGUAGE_LIST: "LANGUAGE_LIST",
@@ -50,23 +45,17 @@ export const setModalInactive = () => {
     }
 }
 
-
-export const toggleModal = (option, state) => {
+export const setUserCountry = (name, code) => {
     return {
-        type: TOGGLE_MODAL, 
-        contentType: option,
-        state: state
+        type: UserSettings.SET_COUNTRY,
+        name: name,
+        code: code
     }
 }
 
-export const setVisibilityFilter = (filter) => {
-    return {type: SET_VISIBILITY_FILTER, filter}
-}
-
-export const setUserOptions = (option) => {
-    return {type: SET_USER_OPTIONS, option}
-}
-
-export const setApiOptions = (option) => {
-    return {type: SET_API_OPTIONS, option}
+export const setUserLanguage = (language) => {
+    return {
+        type: UserSettings.SET_LANGUAGE,
+        language: language
+    }
 }

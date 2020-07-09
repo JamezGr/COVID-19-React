@@ -5,7 +5,8 @@ import { Button } from '@material-ui/core';
 import Fab from '@material-ui/core/Fab';
 import Box from '@material-ui/core/Box';
 
-import LanguageIcon from '@material-ui/icons/Language';
+import PublicIcon from '@material-ui/icons/Public';
+import TranslateIcon from '@material-ui/icons/Translate';
 import InfoIcon from '@material-ui/icons/Info';
 import TimelineIcon from '@material-ui/icons/Timeline';
 import Brightness3Icon from '@material-ui/icons/Brightness3';
@@ -16,12 +17,12 @@ class TopBar extends React.Component {
             <div className="top-bar">
                 <div id="top-bar-logo">COVID19 Dashboard</div>
                 <div id="top-bar-nav-buttons">
-                    <Fab m={2} color="primary" aria-label="add" className="fab" title="Timeline">
-                        <TimelineIcon />
+                    <Fab color="primary" aria-label="add" className="fab" title="Change Country">
+                        <PublicIcon />
                     </Fab>
 
                     <Fab color="primary" aria-label="add" className="fab" title="Change Language">
-                        <LanguageIcon />
+                        <TranslateIcon />
                     </Fab>
                 
                     <Fab color="primary" aria-label="add" className="fab" title="Switch to Dark/Light Mode">
