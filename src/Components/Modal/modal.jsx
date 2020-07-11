@@ -1,7 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import CountriesContent from './Countries/countries_modal';
 import Country from './Countries/country_holder';
 import CountriesList from '../../Content/countries.json';
+
+import LocalStorageHelper from '../../Helpers/LocalStorageHelper';
+
 
 import ModalList from './modal_list';
 import { ModalType, setModalActive, setModalInactive } from '../../Actions';
@@ -13,38 +18,47 @@ class Modal extends React.Component{
         super(props);
 
         this.state = {
-            isVisible: true
+            isVisible: true,
+            contentType: null
+        }
+
+        this.contentTypeList = {
+            NONE: null,
+            COUNTRY_LIST: <CountriesContent/>
         }
     }
 
     componentDidMount() {
         this.checkState();
+        this.setDefaults();
     }
+
+    componentDidUpdate() {}
 
     checkState() {
         ModalStore.subscribe(() => {
             const MODAL_STATE = ModalStore.getState();
-            MODAL_STATE.contentType == ModalType.NONE? this.setInactive(): this.setActive();
+            MODAL_STATE.contentType === ModalType.NONE ? this.setInactive(): this.setActive(MODAL_STATE.contentType);
         });
     }
 
-    setActive = () => this.setState({isVisible: true});
+    setDefaults = () => {
+        LocalStorageHelper.hasItem("userCountry") ? 
+        ModalStore.dispatch(setModalInactive()): ModalStore.dispatch(setModalActive(ModalType.COUNTRY_LIST));
+    }
+
+    setActive = (contentType) => {
+        this.setState({isVisible: true});
+        this.setState({contentType: this.contentTypeList[contentType]});
+    };
 
     setInactive = () => this.setState({isVisible: false});
 
     render() {
+        const {contentType, visiblity} = this.props;
+
         return (
-            this.state.isVisible ? <div id="modal--window" ref="modal_window">
-                                        <div id="modal--window__title">Select Your Country</div>
-                                        <div id="modal--window__area">
-                                            <ModalList title="ASIA & PACIFIC" type="COUNTRIES"/> 
-                                            <ModalList title="ANTARCTICA" type="COUNTRIES"/> 
-                                            <ModalList title="EUROPE" type="COUNTRIES"/> 
-                                            <ModalList title="MIDDLE EAST & AFRICA" type="COUNTRIES"/> 
-                                            <ModalList title="NORTH AMERICA" type="COUNTRIES"/> 
-                                            <ModalList title="SOUTH AMERICA" type="COUNTRIES"/> 
-                                        </div>
-                                    </div>: null
+            this.state.isVisible ? this.state.contentType: null
         )
     }
 }

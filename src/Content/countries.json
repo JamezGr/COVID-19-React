@@ -497,11 +497,6 @@
             "language": "English"
         }, 
         {
-            "name": "Guyana",
-            "code": "GY",
-            "language": "English"
-        },
-        {
             "name": "Netherlands Antilles",
             "code": "AN",
             "language": "Nederlands"
@@ -617,11 +612,6 @@
             "name": "Equatorial Guinea",
             "code": "GQ",
             "language": "Español/Français"
-        },
-        {
-            "name": "Eritrea",
-            "code": "ER",
-            "language": "Tigrinya"
         },
         {
             "name": "Eritrea",
@@ -1139,11 +1129,6 @@
             "name": "Sri Lanka",
             "code": "LK",
             "language": "Tamil"
-        },
-        {
-            "name": "Pakistan",
-            "code": "PK",
-            "language": "Urdu"
         },
         {
             "name": "Pakistan",

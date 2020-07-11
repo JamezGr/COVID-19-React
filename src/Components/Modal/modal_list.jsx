@@ -45,7 +45,8 @@ class ModalList extends React.Component {
                 <div className={this.state.isOpen ? "modal--list__container visible": "modal--list__container hidden"}>
                     {this.state.listContent.map((item, i) => <Country name={item.name} 
                                                                     language={item.language}
-                                                                    type={item.code}/>)}
+                                                                    type={item.code}
+                                                                    key={item.code + "_" + item.name}/>)}
                 </div>
             </div>
         )
