@@ -12,6 +12,8 @@ import { UserSettingsStore } from '../../../Stores';
 import { setUserCountry } from '../../../Actions';
 import { setModalInactive } from '../../../Actions';
 
+import API from '../../../API/api';
+
 class Country extends React.Component {
     constructor(props) {
         super(props);
@@ -30,6 +32,8 @@ class Country extends React.Component {
         LocalStorageHelper.setItem('userCountry', JSON.stringify(userCountry));
         ModalStore.dispatch(setModalInactive());
         UserSettingsStore.dispatch(setUserCountry(userCountry.name, userCountry.flagCode));
+
+        API.fetchData(userCountry.name);
         
         console.log("LocalStorage", window.localStorage)
     }
