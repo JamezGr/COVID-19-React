@@ -1046,6 +1046,11 @@
             "language": "Lebanese"
         },
         {
+            "name": "Korea, South",
+            "code": "KR",
+            "language": "한국어"
+        },
+        {
             "name": "Macao",
             "code": "MO",
             "language": "Português"
@@ -1119,11 +1124,6 @@
             "name": "Singapore",
             "code": "SG",
             "language": "Malay/English/普通话"
-        },
-        {
-            "name": "South Korea",
-            "code": "KR",
-            "language": "한국어"
         },
         {
             "name": "Sri Lanka",

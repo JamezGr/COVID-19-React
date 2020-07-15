@@ -1,12 +1,13 @@
 import { UserSettings } from '../Actions';
 
-const initialState = {
+const initialUserSettings = {
     countryName: "United Kingdom",
     countryCode: "GB",
-    language: "English"
+    language: "English",
+    countryData: {}
 }
 
-export const userSettings = (state = initialState, action) => {
+export const userSettings = (state = initialUserSettings, action) => {
     switch (action.type) {
         case (UserSettings.SET_COUNTRY): {
             return {
@@ -20,6 +21,13 @@ export const userSettings = (state = initialState, action) => {
             return {
                 ...state,
                 language: action.language
+            }
+        }
+
+        case (UserSettings.SET_COUNTRY_DATA): {
+            return {
+                ...state, 
+                countryData: action.response
             }
         }
     }

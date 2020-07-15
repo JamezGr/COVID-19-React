@@ -7,6 +7,10 @@ import InfoCard from '../InfoCard/infocard';
 import { UserSettingsStore } from '../../Stores';
 import { userSettings } from '../../Reducers/userSettings';
 
+import { setCountryData } from '../../Actions';
+
+import API from '../../API/api';
+
 class Dashboard extends React.Component {
     constructor(props) {
         super(props);
@@ -14,7 +18,8 @@ class Dashboard extends React.Component {
         this.state = {
             country: undefined,
             countryCode: undefined,
-            language: "English"
+            language: "English",
+            countryData: []
         }
     }
 
@@ -26,18 +31,22 @@ class Dashboard extends React.Component {
     subscribe() {
         UserSettingsStore.subscribe(() => {
             const UserSettings = UserSettingsStore.getState();
-
+            
             const CountryName = UserSettings.countryName;
             const CountryCode = UserSettings.countryCode;
+            const CountryData = UserSettings.countryData;
 
             if (CountryName && CountryCode) this.setCountry(CountryName, CountryCode);
+            if (CountryData) console.log(CountryData);
         });
     }
 
     // check to see if User Settings Found in Local Storage first
     setDefaults = () => {
         if (LocalStorageHelper.hasItem("userCountry")) {
-            const DefaultSettings = JSON.parse(LocalStorageHelper.getItem("userCountry"));
+            const DefaultSettings = JSON.parse(LocalStorageHelper.getItem("userCountry")); 
+            
+            API.fetchData(DefaultSettings.name);
             
             this.setState({country: DefaultSettings.name});
             this.setState({countryCode: DefaultSettings.flagCode});
@@ -52,6 +61,8 @@ class Dashboard extends React.Component {
         this.setState({country: country});
         this.setState({countryCode: code});
     }
+
+    setCountryData = (updatedRecords) => this.setState({countryData: updatedRecords});
 
     render() {
         return (

@@ -23,11 +23,12 @@ export const VisibilityFilters = {
 
 export const UserSettings = {
     SET_COUNTRY: "SET_COUNTRY",
-    SET_LANGUAGE: "SET_LANGUAGE"
+    SET_LANGUAGE: "SET_LANGUAGE",
+    SET_COUNTRY_DATA: "SET_COUNTRY_DATA"
 }
 
 export const API = {
-    SET_REQUEST: "SET_REQUEST",
+    SEND_REQUEST: "SET_REQUEST",
     CACHE_RESPONSE: "CACHE_RESPONSE",
 }
 
@@ -57,5 +58,12 @@ export const setUserLanguage = (language) => {
     return {
         type: UserSettings.SET_LANGUAGE,
         language: language
+    }
+}
+
+export const setCountryData = (response) => {
+    return {
+        type: UserSettings.SET_COUNTRY_DATA,
+        response: response
     }
 }
