@@ -8,7 +8,9 @@ class InfoCard extends React.Component {
         super(props);
         this.state = {
             title: "",
-            lineGraph: []
+            lineGraph: [],
+            currentCount: "",
+            increaseCount: "" 
         }
 
         this.infoDescription = {
@@ -43,10 +45,22 @@ class InfoCard extends React.Component {
 
         let filteredList = [];
 
+        // create X and Y Label Sets for Graphs 
         if (Array.isArray(UserSettings.countryData)) {
             UserSettings.countryData.forEach(record => {
                 filteredList.push({count: record[filterType], date: record.date});
             });
+
+            const currentRecord = filteredList[filteredList.length - 1];
+            const comparisonRecord = filteredList[filteredList.length - 2];
+
+            const currentCount = currentRecord.count;
+            const comparisionCount = comparisonRecord.count;
+
+            const increaseCount = currentCount - comparisionCount;
+
+            this.setState({currentCount: currentCount});
+            this.setState({increaseCount: increaseCount});
 
             this.setState({lineGraph: <LineGraph data={filteredList}/>})
         }
@@ -63,8 +77,8 @@ class InfoCard extends React.Component {
                     {this.state.title}
                 </div>
 
-                <span className="info-card__statistic">0</span>
-                <span className="info-card__count">+0 {this.infoDescription[this.state.title]}</span>
+                <span className="info-card__statistic">{this.state.currentCount.toLocaleString('en')}</span>
+                <span className="info-card__count">+{this.state.increaseCount} {this.infoDescription[this.state.title]}</span>
                 {this.state.lineGraph}
             </div>
         )
