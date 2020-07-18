@@ -3,6 +3,8 @@ import LineGraph from '../Charts/chart';
 import { UserSettingsStore } from '../../Stores';
 import { userSettings } from '../../Reducers/userSettings';
 
+import CountUp from 'react-countup';
+
 class InfoCard extends React.Component {
     constructor(props) {
         super(props);
@@ -77,8 +79,18 @@ class InfoCard extends React.Component {
                     {this.state.title}
                 </div>
 
-                <span className="info-card__statistic">{this.state.currentCount.toLocaleString('en')}</span>
-                <span className="info-card__count">+{this.state.increaseCount} {this.infoDescription[this.state.title]}</span>
+                <span className="info-card__statistic">
+                    {/* {this.state.currentCount.toLocaleString('en')} */}
+                    <CountUp
+                        start={0}
+                        end={this.state.currentCount}
+                        duration={2}
+                        decimal=","
+                    ></CountUp>
+                </span>
+                <span className="info-card__count">
+                    +{this.state.increaseCount} {this.infoDescription[this.state.title]}
+                </span>
                 {this.state.lineGraph}
             </div>
         )

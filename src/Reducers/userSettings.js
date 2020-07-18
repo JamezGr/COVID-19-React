@@ -1,11 +1,29 @@
 import { UserSettings } from '../Actions';
+import LocalStorageHelper from '../Helpers/LocalStorageHelper';
 
-const initialUserSettings = {
+const defaultSettings = {
     countryName: "United Kingdom",
     countryCode: "GB",
     language: "English",
     countryData: {}
 }
+
+const getUserCountry = () => {
+    if (LocalStorageHelper.hasItem("userCountry")) {
+        const UserCountry = JSON.parse(LocalStorageHelper.getItem("userCountry"));
+
+        return {
+            countryName: UserCountry.name,
+            countryCode: UserCountry.flagCode,
+            language: "English",
+            countryData: {}
+        }
+    }
+
+    return defaultSettings
+};
+
+const initialUserSettings = getUserCountry();
 
 export const userSettings = (state = initialUserSettings, action) => {
     switch (action.type) {

@@ -8,22 +8,32 @@ export default class LineGraph extends Component {
 
         this.state = {
             xLabels: [],
-            yLabels: []
+            yLabels: [],
+            chartInstance: null
         }
     }
 
     chartRef = React.createRef();
+    chart;
     
     componentDidUpdate() {
+        if (this.chart) {
+            this.resetGraph();
+            this.createGraph();
+        }
     }
 
-    componentDidMount() {
+    resetGraph() {
+        if (this.chart) this.chart.destroy();
+    }
+
+    createGraph() {
         const myChartRef = this.chartRef.current.getContext("2d");
 
         const xLabels = this.props.data.map(record => {return record.date});
         const yLabels = this.props.data.map(record => {return record.count});
-        
-        const chart = new Chart(myChartRef, {
+
+        this.chart = new Chart(myChartRef, {
             type: "line",
             data: {
                 labels: xLabels,
@@ -61,6 +71,11 @@ export default class LineGraph extends Component {
         Chart.defaults.global.responsive = true;
         Chart.defaults.global.maintainAspectRatio = false;
     }
+
+    componentDidMount() {
+        this.createGraph();
+    }
+
     render() {
         const {data} = this.props;
 
