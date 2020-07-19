@@ -80,15 +80,17 @@ class Dashboard extends React.Component {
                         <InfoCard title="TOTAL CONFIRMED DEATHS"/>
                         <InfoCard title="TOTAL CONFIRMED RECOVERIES"/>
                     </div>
-
-                    <Container/>
+                    
+                    <div className="dashboard--content__area">
+                        <Container/>
+                    </div>
                     
                 </div>
                 : 
                 <div>
                     <div className="dashboard--content__title loading"></div>
                     <div className="dashboard--content__overview loading"></div>
-                    <Container loadState="loading"/>
+                    <div className="dashboard--content__area loading"></div>
                 </div>}
             </div>
         )
