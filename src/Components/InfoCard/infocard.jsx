@@ -16,9 +16,9 @@ class InfoCard extends React.Component {
         }
 
         this.infoDescription = {
-            "TOTAL CONFIRMED CASES": "New Cases",
-            "TOTAL CONFIRMED DEATHS": "New Deaths",
-            "TOTAL CONFIRMED RECOVERIES": "New Recoveries"
+            "TOTAL CONFIRMED CASES": "Cases",
+            "TOTAL CONFIRMED DEATHS": "Deaths",
+            "TOTAL CONFIRMED RECOVERIES": "Recoveries"
         }
 
         this.dataType = {
@@ -85,7 +85,7 @@ class InfoCard extends React.Component {
                         start={0}
                         end={this.state.currentCount}
                         duration={2}
-                        decimal=","
+                        useEasing={true}
                     ></CountUp>
                 </span>
                 <span className="info-card__count">

@@ -3,6 +3,7 @@ import flags from '../../Content/country_flags';
 import LocalStorageHelper from '../../Helpers/LocalStorageHelper';
 
 import InfoCard from '../InfoCard/infocard';
+import Container from '../Container/container';
 
 import { UserSettingsStore } from '../../Stores';
 import { userSettings } from '../../Reducers/userSettings';
@@ -79,11 +80,15 @@ class Dashboard extends React.Component {
                         <InfoCard title="TOTAL CONFIRMED DEATHS"/>
                         <InfoCard title="TOTAL CONFIRMED RECOVERIES"/>
                     </div>
+
+                    <Container/>
+                    
                 </div>
                 : 
                 <div>
                     <div className="dashboard--content__title loading"></div>
                     <div className="dashboard--content__overview loading"></div>
+                    <Container loadState="loading"/>
                 </div>}
             </div>
         )
