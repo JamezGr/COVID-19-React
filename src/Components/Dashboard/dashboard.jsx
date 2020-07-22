@@ -82,7 +82,7 @@ class Dashboard extends React.Component {
                     </div>
                     
                     <div className="dashboard--content__area">
-                        <Container/>
+                        <Container height={2} width={3}/>
                     </div>
                     
                 </div>
