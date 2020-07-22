@@ -39,11 +39,11 @@ class Container extends React.Component {
     }
 
     render() {
-        const {loadState, height, width} = this.props;
+        const {loadState, height, width, contents} = this.props;
 
         return (
-            <div className={"dashboard--content__container"} ref={this.container} style={{height: "400px"}}>
-
+            <div className={"dashboard--content__container"} ref={this.container}>
+                {this.props.contents}
             </div>
         )
     }

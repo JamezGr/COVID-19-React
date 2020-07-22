@@ -4,6 +4,7 @@ import LocalStorageHelper from '../../Helpers/LocalStorageHelper';
 
 import InfoCard from '../InfoCard/infocard';
 import Container from '../Container/container';
+import Overview from '../../Content/Overview/overview';
 
 import { UserSettingsStore } from '../../Stores';
 import { userSettings } from '../../Reducers/userSettings';
@@ -82,8 +83,11 @@ class Dashboard extends React.Component {
                     </div>
                     
                     <div className="dashboard--content__area">
-                        <Container height={2} width={3}/>
+                        <Container height={2} width={2} contents={<Overview/>}/>
+                        <Container height={2} width={1}/>
                     </div>
+
+                        
                     
                 </div>
                 : 

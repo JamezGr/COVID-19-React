@@ -254,13 +254,34 @@ body {
 
 .dashboard--content__area {
   width: 100%;
-  height: 400px;
+  display: flex;
 }
 
 .dashboard--content__container {
   border: 2px solid #e1e1e6;
   border-radius: 10px;
   background-color: white;
+  padding: 15px;
+  margin-right: 20px;
+}
+
+.dashboard--content__tabs-area {
+  display: flex;
+}
+
+.dashboard--content__tab {
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+
+  border: 2px solid #e1e1e6;
+  cursor: pointer;
+}
+
+.dashboard--content__tab:hover {
+  background-color: #f6f6f8;
+  border: 2px solid #3f51b5;
+  color: #606c76;
 }
 
 .loading {
