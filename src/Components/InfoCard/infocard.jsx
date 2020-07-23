@@ -64,7 +64,7 @@ class InfoCard extends React.Component {
             this.setState({currentCount: currentCount});
             this.setState({increaseCount: increaseCount});
 
-            this.setState({lineGraph: <LineGraph data={filteredList}/>})
+            this.setState({lineGraph: <LineGraph data={filteredList} className={"info-card__graph"}/>})
         }
 
         return null

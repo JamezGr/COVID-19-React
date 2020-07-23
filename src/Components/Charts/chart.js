@@ -77,11 +77,11 @@ export default class LineGraph extends Component {
     }
 
     render() {
-        const {data} = this.props;
+        const {data, className} = this.props;
 
         return (
-            <div style={{width: "100%", height: "80px"}}>
-                <canvas style={{width: "100%", height: "80px"}} className="info-card__graph" ref={this.chartRef}/>
+            <div style={{width: "100%"}}>
+                <canvas style={{width: "100%"}} className={this.props.className} ref={this.chartRef}/>
             </div>
         )
     }
