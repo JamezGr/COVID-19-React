@@ -63,7 +63,10 @@ class Overview extends React.Component {
         // create X and Y Label Sets for Graphs 
         if (Array.isArray(UserSettings.countryData)) {
             UserSettings.countryData.forEach((record, index) => {
-                filteredList.push({count: record[filterType], date: "Day " + index});
+                const filteredDate = new Date(record.date);
+                const [filteredDay, filteredMonth] = [filteredDate.getDate(), filteredDate.toLocaleString('default', { month: 'short'})];
+
+                filteredList.push({count: record[filterType], date: filteredMonth + " " + filteredDay});
             });
 
             this.setState({lineGraph: <LineGraph data={filteredList} 
@@ -89,9 +92,9 @@ class Overview extends React.Component {
         return (
             <div>
                 <div className="dashboard--content__tabs-area" ref={this.tabsArea} onClick={this.selectTabData}>
-                    <div className="dashboard--content__tab" data-id={this.dataType["TOTAL CONFIRMED CASES"]}>Confirmed Cases</div>
-                    <div className="dashboard--content__tab" data-id={this.dataType["TOTAL CONFIRMED DEATHS"]}>Confirmed Deaths</div>
-                    <div className="dashboard--content__tab" data-id={this.dataType["TOTAL CONFIRMED RECOVERIES"]}>Confirmed Recoveries</div>
+                    <div className="dashboard--content__tab" data-id={this.dataType["TOTAL CONFIRMED CASES"]} title="Confirmed Cases">Confirmed Cases</div>
+                    <div className="dashboard--content__tab" data-id={this.dataType["TOTAL CONFIRMED DEATHS"]} title="Confirmed Deaths">Confirmed Deaths</div>
+                    <div className="dashboard--content__tab" data-id={this.dataType["TOTAL CONFIRMED RECOVERIES"]} title="Confirmed Recoveries">Confirmed Recoveries</div>
                 </div>
 
                 <div className="dashboard--content__container-graph">{this.state.lineGraph}</div>
