@@ -10,8 +10,8 @@ class Overview extends React.Component {
         super(props);
 
         this.state = {
-            selectedDataType: "TOTAL CONFIRMED CASES",
-            lineGraph: [] 
+            selectedDataType: "confirmed",
+            lineGraph: null
         };
 
         this.dataType = {
@@ -24,14 +24,23 @@ class Overview extends React.Component {
         this.selectTabData = this.selectTabData.bind(this);
     }
 
-    selectTabData(e) {
+    selectTabData = (e) => {
+        const dataId = e.target.dataset.id;
+
         this.tabsArea.current.childNodes.forEach(tab => tab.classList.remove("selected"));
         e.target.classList.add("selected");
+
+        if (dataId !== this.state.selectedDataType) {
+            this.setState({selectedDataType: dataId}, function() {
+                this.resetGraphData();
+                this.filterGraphData();
+            })
+        }
     }
 
     setDefaults = () => {
-        const defaultTabSelected = document.querySelector('[data-id=' + this.dataType[this.state.selectedDataType] + ']');
-        
+        // add styling to selected tabs
+        const defaultTabSelected = document.querySelector('[data-id=' + this.state.selectedDataType + ']');
         if (defaultTabSelected != null) defaultTabSelected.classList.add("selected");
     }
 
@@ -43,27 +52,35 @@ class Overview extends React.Component {
         });
     }
 
-    filterGraphData() {
+    resetGraphData = () => this.setState({lineGraph: null});
+
+    filterGraphData = () => {
         const UserSettings = UserSettingsStore.getState();
-        const filterType = this.dataType[this.state.selectedDataType];
+        const filterType = this.state.selectedDataType;
 
         let filteredList = [];
 
         // create X and Y Label Sets for Graphs 
         if (Array.isArray(UserSettings.countryData)) {
-            UserSettings.countryData.forEach(record => {
-                filteredList.push({count: record[filterType], date: record.date});
+            UserSettings.countryData.forEach((record, index) => {
+                filteredList.push({count: record[filterType], date: "Day " + index});
             });
 
-            console.log(filteredList)
-
-            this.setState({lineGraph: <LineGraph data={filteredList} className={"dashboard--container__graph"}/>})
+            this.setState({lineGraph: <LineGraph data={filteredList} 
+                                                className={"dashboard--container__graph"}
+                                                labels={true}
+                                                legend={false}
+                                                tooltips={true}
+                                                xAxes={true}
+                                                yAxes={true}
+                                                backgroundColor={"rgba(0, 0, 0, 0)"}
+                                                borderColor={"rgba(124, 28, 4, 1)"}/>})
         }
 
         return null
     }
 
-    componentDidMount() {
+    componentDidMount = () => {
         this.subscribe();
         this.setDefaults();
     }

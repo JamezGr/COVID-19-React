@@ -42,6 +42,8 @@ export default class LineGraph extends Component {
                     {
                         label: "",
                         data: yLabels,
+                        borderColor: this.props.borderColor || 'rgba(0, 0, 0, 0.1)',
+                        backgroundColor: this.props.backgroundColor || 'rgba(0, 0, 0, 0.1)'
                     }
                 ]
             },
@@ -55,14 +57,20 @@ export default class LineGraph extends Component {
                     display: false,
                 },
                 tooltips: {
-                    enabled: false
+                    enabled: this.props.tooltips || false
                 },
                 scales:{
                     xAxes: [{
-                        display: false //this will remove all the x-axis grid lines
+                        display: this.props.xAxes || false, //this will remove all the x-axis grid lines
+                        gridLines: {
+                            display: false
+                         }
                     }],
                     yAxes: [{
-                        display: false //this will remove all the x-axis grid lines
+                        display: this.props.yAxes || false, //this will remove all the x-axis grid lines
+                        gridLines: {
+                            display: true
+                         }
                     }]
                 }
             }
@@ -77,7 +85,7 @@ export default class LineGraph extends Component {
     }
 
     render() {
-        const {data, className} = this.props;
+        const {data, className, labels, legend, tooltips, xAxes, yAxes, backgroundColor, borderColor} = this.props;
 
         return (
             <div style={{width: "100%"}}>

@@ -246,6 +246,10 @@ body {
   height: 80px !important;
 }
 
+.dashboard--container__graph {
+  height: 250px !important;
+}
+
 .dashboard--content__overview {
   min-width: 1200px;
   margin: 20px 0px 20px 0px;
@@ -268,6 +272,7 @@ body {
 
 .dashboard--content__tabs-area {
   display: flex;
+  padding-bottom: 40px;
 }
 
 .dashboard--content__tab {

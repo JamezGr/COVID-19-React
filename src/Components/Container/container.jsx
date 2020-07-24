@@ -43,7 +43,10 @@ class Container extends React.Component {
 
         return (
             <div className={"dashboard--content__container"} ref={this.container}>
-                {this.props.contents}
+                <div style={{height: "100%"}}>
+                    {this.props.contents}
+                </div>
+                
             </div>
         )
     }
