@@ -238,7 +238,7 @@ const countries = {
         "UA": "Ukraine", 
         "UG": "Uganda", 
         "UM": "US Minor Outlying Islands", 
-        "US": "United States", 
+        "US": "US", 
         "UY": "Uruguay", 
         "UZ": "Uzbekistan", 
         "VA": "Holy See (Vatican City State)", 

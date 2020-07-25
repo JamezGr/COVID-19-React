@@ -89,7 +89,7 @@ class InfoCard extends React.Component {
                     ></CountUp>
                 </span>
                 <span className="info-card__count">
-                    +{this.state.increaseCount} {this.infoDescription[this.state.title]}
+                    +{this.state.increaseCount} {/* this.infoDescription[this.state.title] */}
                 </span>
                 {this.state.lineGraph}
             </div>
