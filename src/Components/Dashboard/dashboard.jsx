@@ -73,7 +73,7 @@ class Dashboard extends React.Component {
                 {this.state.country && this.state.countryCode ? 
                 <div>
                     <div className="dashboard--content__title">
-                        <img className="country--icon" src={flags[this.state.countryCode]}></img>
+                        <img className="country--icon disabled" src={flags[this.state.countryCode]}></img>
                         <span style={{paddingLeft: "15px"}}>{this.state.country}</span>
                     </div> 
 
