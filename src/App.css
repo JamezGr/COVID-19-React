@@ -276,7 +276,7 @@ body {
 }
 
 .dashboard--content__tab {
-  width: 30%;
+  width: 40%;
   padding: 10px;
   text-align: center;
 
@@ -294,6 +294,22 @@ body {
   background-color: #f6f6f8;
   border: 2px solid #3f51b5;
   color: #606c76;
+}
+
+.dashboard--content__selectable-item {
+  width: calc(80% + 15px);
+  height: 40px;
+  border: 2px solid #e1e1e6;
+  border-radius: 10px;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+}
+
+.selectable-item__toggle-visibility, 
+.selectable-item__delete {
+  cursor: pointer;
 }
 
 .loading {
