@@ -40,7 +40,7 @@ export default class LineGraph extends Component {
                 //Bring in data
                 datasets: [
                     {
-                        label: "",
+                        label: this.props.lineName || "",
                         data: yLabels,
                         borderColor: this.props.borderColor || 'rgba(0, 0, 0, 0.1)',
                         backgroundColor: this.props.backgroundColor || 'rgba(0, 0, 0, 0.1)'
@@ -85,7 +85,7 @@ export default class LineGraph extends Component {
     }
 
     render() {
-        const {data, className, labels, legend, tooltips, xAxes, yAxes, backgroundColor, borderColor} = this.props;
+        const {data, className, lineName, labels, legend, tooltips, xAxes, yAxes, backgroundColor, borderColor} = this.props;
 
         return (
             <div style={{width: "100%"}}>

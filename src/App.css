@@ -206,6 +206,11 @@ body {
   cursor: default;
 }
 
+.btnDisabled {
+  color: #606c76;
+  cursor: default !important;
+}
+
 .dashboard--content__country-search {
   border-radius: 25px;
   border: 2px solid #e1e1e6;
@@ -352,6 +357,7 @@ body {
 
   display: flex;
   align-items: center;
+  user-select: none;
 }
 
 .selectable-item__toggle-visibility, 

@@ -71,6 +71,7 @@ class Overview extends React.Component {
 
             this.setState({lineGraph: <LineGraph data={filteredList} 
                                                 className={"dashboard--container__graph"}
+                                                lineName={UserSettings.countryName}
                                                 labels={true}
                                                 legend={false}
                                                 tooltips={true}

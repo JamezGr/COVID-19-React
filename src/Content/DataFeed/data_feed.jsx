@@ -7,24 +7,33 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import CloseIcon from '@material-ui/icons/Close';
 
+import { UserSettingsStore } from '../../Stores';
+
+
 class DataFeedItem extends React.Component {
     constructor(props) {
         super(props);
         
         this.state = {
-            isVisible: true
+            isVisible: true,
+            isDeletable: false
         }
     }
 
     toggleVisibility = () => this.setState({isVisible: !this.state.isVisible});
-
+    
+    componentDidMount = () => {
+        if (this.props.deletable) this.setState({isDeletable: this.props.deletable});
+    }
 
     render() {
+        const {flag, name, deletable} = this.props;
+
         return (
             <div className="dashboard--content__selectable-item">
                 <div className="selectable-item__name" style={{width: "80%", display: "table"}}>
-                    <img className="country--icon disabled" src={CountryFlags.SG}></img>
-                    <span style={{paddingLeft: "10px", fontWeight: "bold", fontSize: "large", color: "#606c76", display: "table-cell", verticalAlign: "middle"}}>SINGAPORE</span>
+                    <img className="country--icon disabled" src={CountryFlags[this.props.flag]}></img>
+                    <span style={{paddingLeft: "10px", fontWeight: "bold", fontSize: "large", color: "#606c76", display: "table-cell", verticalAlign: "middle"}}>{this.props.name}</span>
                 </div>
                 
 
@@ -32,7 +41,7 @@ class DataFeedItem extends React.Component {
                     <span className="selectable-item__toggle-visibility" title="Toggle Visibility" onClick={this.toggleVisibility}>
                         {this.state.isVisible === true ? <VisibilityIcon/> : <VisibilityOffIcon/>}
                     </span>
-                    <span className="selectable-item__delete" title="Delete Item"><DeleteIcon/></span>
+                    <span className={this.state.isDeletable ? "selectable-item__delete" : "selectable-item__delete btnDisabled"} title="Delete Item"><DeleteIcon/></span>
                 </div>
             </div>
         )
@@ -72,6 +81,21 @@ class DataFeed extends React.Component {
         this.setState({searchResults: results});
     }
 
+    addCountry = (e) => {
+        const CountryToAdd = e.currentTarget.dataset.country;
+        const CountryFlag = this.countryFlagList[this.countryList.indexOf(CountryToAdd)];
+
+        console.log(CountryFlag);
+
+        this.setState({
+            selectedCountries: [...this.state.selectedCountries, <DataFeedItem flag={CountryFlag} name={CountryToAdd} deletable={true}/>],
+            searchResults: [],
+            isSearching: false
+        });
+
+        this.searchBar.current.value = "";
+    }
+
     clearSearch = () => {
         this.searchBar.current.value = "";
         this.setState({isSearching: false});
@@ -89,6 +113,15 @@ class DataFeed extends React.Component {
     setDefaults = () => {
         const defaultTabSelected = document.querySelector('[data-id=' + this.state.selectedDataType + ']');
         if (defaultTabSelected != null) defaultTabSelected.classList.add("selected");
+
+        UserSettingsStore.subscribe(() => {
+            const UserSettings = UserSettingsStore.getState();
+            
+            const CountryName = UserSettings.countryName;
+            const CountryCode = UserSettings.countryCode;
+
+            if (CountryName && CountryCode) this.setState({selectedCountries: [<DataFeedItem flag={CountryCode} name={CountryName}/>]});
+        });
     }
 
     componentDidMount = () => {
@@ -112,7 +145,7 @@ class DataFeed extends React.Component {
                 {this.state.searchResults.length != 0 && this.state.isSearching ? 
                     <div className="dashboard--content__country-search-results">
                         {this.state.searchResults.map(result => {
-                            return <div className="dashboard--content__country-result">
+                            return <div className="dashboard--content__country-result" data-country={result} onClick={this.addCountry}>
                                 <img style={{width: "40px", paddingRight: "10px"}} src={this.countryFlagImages[this.countryFlagList[this.countryList.indexOf(result)]]}></img>
                                 <span>{result}</span>
                             </div>})
@@ -120,7 +153,7 @@ class DataFeed extends React.Component {
                     </div> : null
                 }
 
-                <div><DataFeedItem/></div>
+                <div>{this.state.selectedCountries.map(country => country)}</div>
             </div>   
         )
     }
