@@ -153,7 +153,9 @@ class DataFeed extends React.Component {
                     </div> : null
                 }
 
-                <div>{this.state.selectedCountries.map(country => country)}</div>
+                <div className="dashboard--content__selected-countries">
+                    {this.state.selectedCountries.map(country => country)}
+                </div>
             </div>   
         )
     }

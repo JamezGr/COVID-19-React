@@ -253,6 +253,12 @@ body {
   background-color: #e1e1e6;
 }
 
+.dashboard--content__selected-countries {
+  overflow-y: scroll;
+  height: 295px;
+  max-height: 295px;
+}
+
 .dashboard--content {
   padding: 20px;
   height: 100%;
