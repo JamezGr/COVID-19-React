@@ -48,5 +48,22 @@ export const userSettings = (state = initialUserSettings, action) => {
                 countryData: action.response
             }
         }
+
+        case (UserSettings.SET_GLOBAL_DATA): {
+            return {
+                ...state,
+                globalData: action.response
+            }
+        }
+
+        case (UserSettings.SET_COUNTRY_VISIBILTY): {
+            return {
+                ...state,
+                countryToggled: action.name 
+            }
+        }
+
+        default: 
+            return initialUserSettings
     }
 }

@@ -24,7 +24,9 @@ export const VisibilityFilters = {
 export const UserSettings = {
     SET_COUNTRY: "SET_COUNTRY",
     SET_LANGUAGE: "SET_LANGUAGE",
-    SET_COUNTRY_DATA: "SET_COUNTRY_DATA"
+    SET_COUNTRY_DATA: "SET_COUNTRY_DATA",
+    SET_GLOBAL_DATA: "SET_GLOBAL_DATA",
+    SET_COUNTRY_VISIBILTY: "SET_COUNTRY_VISIBILITY"
 }
 
 export const API = {
@@ -65,5 +67,19 @@ export const setCountryData = (response) => {
     return {
         type: UserSettings.SET_COUNTRY_DATA,
         response: response
+    }
+}
+
+export const setGlobalData = (response) => {
+    return {
+        type: UserSettings.SET_GLOBAL_DATA,
+        response: response
+    }
+}
+
+export const toggleCountryVisibility = (name) => {
+    return {
+        type: UserSettings.SET_COUNTRY_VISIBILTY,
+        name: name
     }
 }

@@ -48,7 +48,7 @@ class Overview extends React.Component {
         UserSettingsStore.subscribe(() => {
             const UserSettings = UserSettingsStore.getState();
 
-            if (UserSettings.countryName && UserSettings.countryData) this.filterGraphData();
+            if (UserSettings.countryName && UserSettings.countryData && UserSettings.globalData) this.filterGraphData();
         });
     }
 
@@ -56,13 +56,16 @@ class Overview extends React.Component {
 
     filterGraphData = () => {
         const UserSettings = UserSettingsStore.getState();
+        const CountryName = UserSettings.countryName;
+        const CountryData = UserSettings.globalData[CountryName]
+
         const filterType = this.state.selectedDataType;
 
         let filteredList = [];
 
         // create X and Y Label Sets for Graphs 
-        if (Array.isArray(UserSettings.countryData)) {
-            UserSettings.countryData.forEach((record, index) => {
+        if (Array.isArray(CountryData)) {
+            CountryData.forEach((record, index) => {
                 const filteredDate = new Date(record.date);
                 const [filteredDay, filteredMonth] = [filteredDate.getDate(), filteredDate.toLocaleString('default', { month: 'short'})];
 

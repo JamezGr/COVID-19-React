@@ -37,20 +37,22 @@ class InfoCard extends React.Component {
         UserSettingsStore.subscribe(() => {
             const UserSettings = UserSettingsStore.getState();
 
-            if (UserSettings.countryName && UserSettings.countryData) this.filterGraphData();
+            if (UserSettings.countryName && UserSettings.countryData && UserSettings.globalData) this.filterGraphData();
         })
     }
 
     filterGraphData = () => {
         const UserSettings = UserSettingsStore.getState();
-        const filterType = this.dataType[this.props.title];
+        const CountryName = UserSettings.countryName;
+        const CountryData = UserSettings.globalData[CountryName]
+        const FilterType = this.dataType[this.props.title];
 
         let filteredList = [];
 
         // create X and Y Label Sets for Graphs 
-        if (Array.isArray(UserSettings.countryData)) {
-            UserSettings.countryData.forEach(record => {
-                filteredList.push({count: record[filterType], date: record.date});
+        if (Array.isArray(UserSettings.globalData[CountryName])) {
+            CountryData.forEach(record => {
+                filteredList.push({count: record[FilterType], date: record.date});
             });
 
             const currentRecord = filteredList[filteredList.length - 1];

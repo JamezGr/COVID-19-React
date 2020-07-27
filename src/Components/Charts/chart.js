@@ -27,6 +27,14 @@ export default class LineGraph extends Component {
         if (this.chart) this.chart.destroy();
     }
 
+    setVisibleLine() {
+
+    }
+
+    subscribe() {
+        
+    }
+
     createGraph() {
         const myChartRef = this.chartRef.current.getContext("2d");
 
@@ -41,6 +49,7 @@ export default class LineGraph extends Component {
                 datasets: [
                     {
                         label: this.props.lineName || "",
+                        hidden: false,
                         data: yLabels,
                         borderColor: this.props.borderColor || 'rgba(0, 0, 0, 0.1)',
                         backgroundColor: this.props.backgroundColor || 'rgba(0, 0, 0, 0.1)'
@@ -78,6 +87,8 @@ export default class LineGraph extends Component {
         
         Chart.defaults.global.responsive = true;
         Chart.defaults.global.maintainAspectRatio = false;
+
+        console.log(this.chart);
     }
 
     componentDidMount() {

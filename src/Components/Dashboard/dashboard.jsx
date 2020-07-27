@@ -34,13 +34,11 @@ class Dashboard extends React.Component {
     subscribe() {
         UserSettingsStore.subscribe(() => {
             const UserSettings = UserSettingsStore.getState();
-            
             const CountryName = UserSettings.countryName;
             const CountryCode = UserSettings.countryCode;
             const CountryData = UserSettings.countryData;
 
             if (CountryName && CountryCode) this.setCountry(CountryName, CountryCode);
-            if (CountryData) console.log(CountryData);
         });
     }
 
@@ -49,7 +47,8 @@ class Dashboard extends React.Component {
         if (LocalStorageHelper.hasItem("userCountry")) {
             const DefaultSettings = JSON.parse(LocalStorageHelper.getItem("userCountry")); 
             
-            API.fetchData(DefaultSettings.name);
+            // API.fetchData(DefaultSettings.name);
+            API.fetchGlobalData();
             
             this.setState({country: DefaultSettings.name});
             this.setState({countryCode: DefaultSettings.flagCode});

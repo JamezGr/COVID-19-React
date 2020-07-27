@@ -33,7 +33,7 @@ class Country extends React.Component {
         ModalStore.dispatch(setModalInactive());
         UserSettingsStore.dispatch(setUserCountry(userCountry.name, userCountry.flagCode));
 
-        API.fetchData(userCountry.name);
+        // API.fetchData(userCountry.name);
         
         console.log("LocalStorage", window.localStorage)
     }

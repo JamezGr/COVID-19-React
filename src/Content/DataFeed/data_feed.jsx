@@ -7,6 +7,7 @@ import VisibilityOffIcon from '@material-ui/icons/VisibilityOff';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import CloseIcon from '@material-ui/icons/Close';
 
+import { toggleCountryVisibility } from '../../Actions';
 import { UserSettingsStore } from '../../Stores';
 
 
@@ -20,7 +21,9 @@ class DataFeedItem extends React.Component {
         }
     }
 
-    toggleVisibility = () => this.setState({isVisible: !this.state.isVisible});
+    toggleVisibility = () => {
+        this.setState({isVisible: !this.state.isVisible});
+    };
     
     componentDidMount = () => {
         if (this.props.deletable) this.setState({isDeletable: this.props.deletable});
