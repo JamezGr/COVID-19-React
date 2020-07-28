@@ -1,11 +1,18 @@
 import { UserSettings } from '../Actions';
 import LocalStorageHelper from '../Helpers/LocalStorageHelper';
 
+export const LoadStatus = {
+    LOADING: "LOADING",
+    LOADED: "LOADED",
+    ERROR: "ERROR"
+}
+
 const defaultSettings = {
     countryName: "United Kingdom",
     countryCode: "GB",
     language: "English",
-    countryData: {}
+    countryData: {},
+    loadStatus: LoadStatus.LOADING
 }
 
 const getUserCountry = () => {
@@ -16,7 +23,8 @@ const getUserCountry = () => {
             countryName: UserCountry.name,
             countryCode: UserCountry.flagCode,
             language: "English",
-            countryData: {}
+            countryData: {},
+            loadStatus: LoadStatus.LOADED
         }
     }
 
@@ -60,6 +68,13 @@ export const userSettings = (state = initialUserSettings, action) => {
             return {
                 ...state,
                 countryToggled: action.name 
+            }
+        }
+
+        case (UserSettings.SET_LOAD_STATUS): {
+            return {
+                ...state, 
+                loadStatus: action.status
             }
         }
 

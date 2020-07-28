@@ -26,7 +26,8 @@ export const UserSettings = {
     SET_LANGUAGE: "SET_LANGUAGE",
     SET_COUNTRY_DATA: "SET_COUNTRY_DATA",
     SET_GLOBAL_DATA: "SET_GLOBAL_DATA",
-    SET_COUNTRY_VISIBILTY: "SET_COUNTRY_VISIBILITY"
+    SET_COUNTRY_VISIBILTY: "SET_COUNTRY_VISIBILITY",
+    SET_LOAD_STATUS: "SET_LOAD_STATUS"
 }
 
 export const API = {
@@ -81,5 +82,12 @@ export const toggleCountryVisibility = (name) => {
     return {
         type: UserSettings.SET_COUNTRY_VISIBILTY,
         name: name
+    }
+}
+
+export const setLoadStatus = (status) => {
+    return {
+        type: UserSettings.SET_LOAD_STATUS,
+        status: status
     }
 }

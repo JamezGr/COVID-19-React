@@ -1,7 +1,7 @@
 import React from 'react';
 import LineGraph from '../Charts/chart';
 import { UserSettingsStore } from '../../Stores';
-import { userSettings } from '../../Reducers/userSettings';
+import { userSettings, LoadStatus } from '../../Reducers/userSettings';
 
 import CountUp from 'react-countup';
 
@@ -29,6 +29,10 @@ class InfoCard extends React.Component {
     }
 
     componentDidMount() {
+        const UserSettings = UserSettingsStore.getState();
+
+        if (UserSettings.globalData && UserSettings.loadStatus === LoadStatus.LOADED) this.filterGraphData();
+
         this.subscribe();
         this.setState({title: this.props.title});
     }
@@ -36,8 +40,7 @@ class InfoCard extends React.Component {
     subscribe = () => {
         UserSettingsStore.subscribe(() => {
             const UserSettings = UserSettingsStore.getState();
-
-            if (UserSettings.countryName && UserSettings.countryData && UserSettings.globalData) this.filterGraphData();
+            if (UserSettings.loadStatus === LoadStatus.LOADED && UserSettings.globalData) this.filterGraphData();
         })
     }
 

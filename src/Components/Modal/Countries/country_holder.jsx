@@ -9,8 +9,10 @@ import LocalStorageHelper from '../../../Helpers/LocalStorageHelper';
 import { ModalStore } from '../../../Stores';
 import { UserSettingsStore } from '../../../Stores';
 
-import { setUserCountry } from '../../../Actions';
+import { setUserCountry, setLoadStatus, UserSettings } from '../../../Actions';
 import { setModalInactive } from '../../../Actions';
+
+import { LoadStatus } from '../../../Reducers/userSettings';
 
 import API from '../../../API/api';
 
@@ -32,6 +34,7 @@ class Country extends React.Component {
         LocalStorageHelper.setItem('userCountry', JSON.stringify(userCountry));
         ModalStore.dispatch(setModalInactive());
         UserSettingsStore.dispatch(setUserCountry(userCountry.name, userCountry.flagCode));
+        UserSettingsStore.dispatch(setLoadStatus(LoadStatus.LOADED));
 
         // API.fetchData(userCountry.name);
         
