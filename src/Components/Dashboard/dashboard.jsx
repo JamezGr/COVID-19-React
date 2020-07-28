@@ -19,8 +19,8 @@ class Dashboard extends React.Component {
         super(props);
         
         this.state = {
-            country: undefined,
-            countryCode: undefined,
+            country: null,
+            countryCode: null,
             language: "English",
             countryData: []
         }
