@@ -27,6 +27,8 @@ class Dashboard extends React.Component {
     }
 
     componentDidMount() {
+        API.fetchGlobalData();
+
         this.setDefaults();
         this.subscribe();
     }
@@ -48,7 +50,6 @@ class Dashboard extends React.Component {
             const DefaultSettings = JSON.parse(LocalStorageHelper.getItem("userCountry")); 
             
             // API.fetchData(DefaultSettings.name);
-            API.fetchGlobalData();
             
             this.setState({country: DefaultSettings.name});
             this.setState({countryCode: DefaultSettings.flagCode});
